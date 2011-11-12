@@ -1,0 +1,218 @@
+div#grid{
+  width: 600px;
+}
+
+table#grid-table{
+  width: 100%;
+  font-size:9px;
+  font-family:"Trebuchet MS",Arial,sans-serif;
+  border-bottom:1px solid #99BBE8;
+  border-right:1px solid #99BBE8;
+}
+
+table#grid-table td{
+  display: table-cell;
+}
+
+table#grid-table thead#grid-table-head tr{
+  display: table-row;
+}
+
+table#grid-table thead#grid-table-head tr td#tdIni{
+  border:1px solid #D4E0EE;
+  border-top: medium none white; 
+  border-left: medium none white; 
+  background: #EFFCFF  none repeat scroll 0% 0%; 
+  opacity: 0.2;
+  filter:alpha(opacity=20);
+}
+
+table#grid-table thead#grid-table-head tr td.title{
+  background-color:#E6EDF5;
+  border-color:#274F7F;
+  border-bottom-width: 1px;
+  border-bottom-style:outset;
+  border-right-width: 1px;
+  border-right-style:outset;
+  border-left-width: 1px;
+  border-left-style:outset;
+  font-size:11px;
+  font-weight:bolder;
+  text-align:center;
+  color:#3B428B;
+  width: 15%;
+  background: url('../images/default/panel/white-top-bottom.gif');
+}
+
+table#grid-table tbody#grid-table-body tr{
+  display: table-row;
+  background:#FCFDFE none repeat scroll 0 0;
+}
+
+table#grid-table tbody#grid-table-body tr.odd{
+  background-color: #F7F9FC;
+  border-bottom: 1px outset #D4E0EE;
+  border-color: #D4E0EE;
+  border-right: 1px outset #D4E0EE;
+}
+
+table#grid-table tbody#grid-table-body td{
+  text-align:center;
+}
+table#grid-table tbody#grid-table-body td.hours{
+  background:#E6EDF5 none repeat scroll 0 0;
+  border-color:#D4E0EE;
+  border-bottom-width: 1px;
+  border-bottom-style:outset;
+  border-right-width: 1px;
+  border-right-style:outset;
+  color:#4F76A3;
+  font-size:10px;
+  text-align:center;
+  width:11%;
+  background: #E2EDFC url('../images/default/grid/row-sel.gif') repeat-x scroll left top;
+}
+
+table#grid-table tbody#grid-table-body td.unselected{
+  font-weight:normal;
+  opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+table#grid-table tbody#grid-table-body td.unselected:hover{
+  background-color: #9BC3CF;
+  cursor: cell;
+  background: url('../images/default/grid/row-over.gif');
+}
+
+table#grid-table tbody#grid-table-body td.hide{
+  display: none;
+}
+
+table#grid-table tbody#grid-table-body td.initial,
+table#grid-table tbody#grid-table-body td.initial:hover{
+  background-color: #CDE7F0;
+  cursor: pointer;
+  background: url('../images/default/grid/row-over.gif');
+}
+
+table#grid-table tbody#grid-table-body td.selected,
+table#grid-table tbody#grid-table-body td.selected:hover{
+  cursor: pointer;
+  border-color: #6F6F6F;
+  border-width: 1px;
+  border-style: outset inset inset outset;
+  background: #EFEFEF url('../images/default/grid/row-over.gif') repeat-x scroll left top;
+}
+
+/*Colours for selected cells with equal content*/
+table#grid-table tbody#grid-table-body td.value2{
+  border-width: 1.8px;
+  border-color: #3F3A00;
+  border-style: solid;
+  background:#DFCE1B url('../images/default/grid/value1.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value5{
+  border-width: 1.8px;
+  border-color: #6F4637;
+  border-style: solid;
+  background:#EFAC95 url('../images/default/grid/value2.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value1{
+  border-width: 1.8px;
+  border-color: #235F4D;
+  border-style: solid;
+  background: #82D6C7 url('../images/default/grid/value3.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value4{
+  border-width: 1.8px;
+  border-color: #77628F;
+  border-style: solid;
+  background:#EDDFF6 url('../images/default/grid/value4.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value8{
+  border-width: 1.8px;
+  border-color: #22384F;
+  border-style: solid;
+  background:#8BB3DF url('../images/default/grid/value5.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value6{
+  border-width: 1.8px;
+  border-color: #306C6F;
+  border-style: solid;
+  background:#72D5DC url('../images/default/grid/value6.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value7{
+  border-width: 1.8px;
+  border-color: #2C7E8F;
+  border-style: solid;
+  background:#6BDAF7 url('../images/default/grid/value7.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value3{
+  border-width: 1.8px;
+  border-color: #226F3B;
+  border-style: solid;
+  background:#67CF7C url('../images/default/grid/value8.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value9{
+  border-width: 1.8px;
+  border-color: #58377F;
+  border-style: solid;
+  background: #A053BC url('../images/default/grid/value9.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value10{
+  border-width: 1.8px;
+  border-color: #BC9BBF;
+  border-style: solid;
+  background:#FDDFFF url('../images/default/grid/value10.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value11{
+  border-width: 1.8px;
+  border-color: #9F683B;
+  border-style: solid;
+  background:#EFA468 url('../images/default/grid/value11.png') repeat-x scroll left top;
+}
+table#grid-table tbody#grid-table-body td.value12{
+  border-width: 1.8px;
+  border-color: #0D6F2D;
+  border-style: solid;
+  background:#19CF54 url('../images/default/grid/value12.png') repeat-x scroll left top;
+}
+
+
+table#grid-table tbody#grid-table-body td.value1:hover,
+table#grid-table tbody#grid-table-body td.value2:hover,
+table#grid-table tbody#grid-table-body td.value3:hover,
+table#grid-table tbody#grid-table-body td.value4:hover,
+table#grid-table tbody#grid-table-body td.value5:hover,
+table#grid-table tbody#grid-table-body td.value6:hover,
+table#grid-table tbody#grid-table-body td.value7:hover,
+table#grid-table tbody#grid-table-body td.value8:hover,
+table#grid-table tbody#grid-table-body td.value9:hover,
+table#grid-table tbody#grid-table-body td.value10:hover,
+table#grid-table tbody#grid-table-body td.value11:hover,
+table#grid-table tbody#grid-table-body td.value12:hover{cursor:pointer;}
+
+/*My Console*/
+div#console{
+  position: fixed; 
+  bottom: 10px; 
+  right: 10px; 
+  height: auto; 
+  width: 300px; 
+  background: #FFFFDF; 
+  border: 1px solid #AEAF15;
+  visibility: hidden;
+}
+
+div#console.hide{
+  visibility: hidden;
+}
+
+div#console.show{
+  font-size: 10px;
+  font-family:"Trebuchet MS",Arial,sans-serif;
+  visibility: visible;
+  overflow: auto;
+  padding: 5px;
+}
