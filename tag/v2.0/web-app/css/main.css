@@ -1,0 +1,174 @@
+.buttons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.buttons input {
+    background: #fff;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 3px;
+    overflow: visible;
+    padding: 2px 6px;
+}
+.buttons input.delete {
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.save {
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+
+/*
+      Created by Keith Donegan of Code-Sucks.com
+	  
+	  E-Mail: Keithdonegan@gmail.com
+	  
+	  You can do whatever you want with these layouts,
+	  but it would be greatly appreciated if you gave a link
+	  back to http://www.code-sucks.com
+	  
+*/
+
+* { padding: 0; margin: 0; }
+
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+#wrapper { 
+ margin: 0 auto;
+ width: 992px;
+}
+#header {
+ color: #333;
+ width: 900px;
+ /*float: left;*/
+ 
+ padding: 10px;
+ /*border: 1px solid #ccc;
+ border-bottom: 1px solid #12375F;*/
+ height: 100px;
+ margin: 5px 0px 5px 0px;
+ background: transparent; /*#BD9C8C*/
+ background-image: url(../images/banner.png);
+ background-repeat: no-repeat;
+ background-position: 0 -3px;
+}
+#leftcolumn { 
+ color: #333;
+ border-right: 1px dotted #ccc;
+ background: white; /*#E7DBD5*/
+ margin: 0px 5px 5px 0px;
+ padding: 10px;
+ height: 680px;
+ width: 195px;
+ float: left;
+ background-image: url(../images/menu.png);
+ background-repeat: no-repeat;
+ background-position: 0px 90px;
+}
+#rightcolumn { 
+ float: left;
+ color: #333;
+ /*border: 1px solid #ccc;*/
+ background: white; /*#F2F2E6*/
+ /*margin: 0px 0px 5px 0px;
+ padding: 10px;
+ height: 350px;*/
+ height: 574px;
+ width: 698px;
+ display: inline;
+ position: relative;
+}
+
+#taws{
+    background: transparent;
+    width: 267px;
+    height:136px;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    background-image: url(../images/logoTAWS.png);
+    background-repeat: no-repeat;
+    background-position: 53px 16px;
+}
+
+div#finder {
+    margin-left:23px;
+    margin-top:148px;
+}
+
+input#verhorario {
+    margin-left:32px;
+}
+
+div#creditos {
+    bottom: 0px;
+    right: 0px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../images/creditos.png);
+    height: 281px;
+    
+}
+
+div#instrucciones {
+    width: 90%;
+    height: auto;
+    visibility: hidden;
+    letter-spacing: 2px;
+    padding: 6px;
+    background-color: #FFFFCF;
+    font-family: 'Lucida Grande,Helvetica,sans-serif';
+    font-size: 10px;
+    border: dotted 1px #EFA186;
+    margin: 2px;
+}
+
+label#masdetalle {
+    font-weight: bolder;
+}
+
+label.note{
+    font-weight: bolder;
+}
+
+div#freetime {
+    background: #FFFFCF;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 1.3em;
+    
+    border: 1.5pt dotted #DD798B;
+    text-align: left;
+    
+    width: 158px;
+    height: 68px;
+    position:fixed;
+    right: 0px;
+    bottom: 132px;
+    visibility: hidden;
+}
+
+.container{
+	height: 50px;
+}
+.hideInitially{
+	visibility: hidden;
+        height: 50px;
+}
