@@ -1,0 +1,65 @@
+/* 
+    Document   : freegreen
+    Created on : May 25, 2009, 10:16:09 AM
+    Author     : X-allam
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+h1, h2, h3 {
+    color: #EF870E;
+    
+}
+
+#logo {
+    background: url(../images/free/logoTAWSyellow.png) no-repeat 0 13px;
+}
+
+#logo h1 i {
+   color: #EF870E;
+}
+
+#footer {
+    background-color: #EFE9A4;
+}
+
+#menu a:hover, #menu .active a {
+	background-color: #EFEAB3;
+        color: #9C9438;
+}
+
+.merror {
+    color:red;
+    font-size:9pt;
+    width:auto;
+    clear: both;
+}
+
+#welcome {
+    margin-top: 18px;
+    margin-bottom:4px;        
+}
+
+.post .meta {
+    font-size:13px;
+    padding-top:25px;
+    margin-bottom:0px;
+}
+
+.post .story { 
+    padding-bottom:5px;
+    padding-top:35px;
+}
+
+#main {
+    margin-bottom:42px;    
+}
+
+a#afreetime {
+    color: #385B88;
+}

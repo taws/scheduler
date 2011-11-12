@@ -1,0 +1,44 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+share_fails:
+  url: /share
+  param: { module: viewer, action: index }
+
+show_shared_schedule:
+  url: /:code/:zm
+  param: { module: share, action: index }
+  requirements:
+    zm: \d+
+
+link_to_share:
+  url: /link_to_share
+  param: { module: share, action: link }
+  
+request_scheduler:
+  url: /lln/:code
+  param: { module: share, action: rq }
+
+authentication:
+  url: /A/1qM
+  param: { module: viewer, action: authentication }
+
+
+viewer:
+  url:  /viewer
+  param: { module: viewer, action: index }
+
+
+# default rules
+homepage:
+  url:   /
+  param: { module: viewer, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

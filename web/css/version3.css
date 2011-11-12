@@ -1,0 +1,28 @@
+/* 
+    Document   : version3
+    Created on : Oct 6, 2011, 12:14:53 PM
+    Author     : Allan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.title {
+    color: #FFFFFF;
+}
+
+#taws{
+    background: transparent;
+    width: 267px;
+    height:136px;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    background-image: url(../images/logoTAWS.png);
+    background-repeat: no-repeat;
+    background-position: 53px 16px;
+}

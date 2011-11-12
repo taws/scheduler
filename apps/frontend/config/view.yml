@@ -1,0 +1,22 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Scheduler
+    description:  Mediante el Schedule Viewer los estudiantes de ESPOL pueden ver sus horarios y descargarlo en formato PDF al ingresar su n&uacute;mero de matr&iacute;cula.
+    keywords:     ESPOL, FIEC, horarios espol, horarios, TAWS, Scheduler Viewer, Planificador de Horarios
+    language:     es
+    copyright:     2008 TAWS
+    author:        TAWS, Denisse Cayetano, Marco Calder&oacute;n, Allan Avenda&ntilde;o
+    #robots:       index, follow
+
+  stylesheets:    [style.css,social-icons.css,tabs.css,scheduler/scheduler.css,scheduler/widget.css,version3.css]
+
+  javascripts:    [base/prototype.js,widget.js,functions.js,application.js,busy/cvi_busy_lib.js]
+
+  has_layout:     true
+  layout:         layout
