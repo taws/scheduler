@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://academico.espol.edu.ec/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://academico.espol.edu.ec/webservices/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://academico.espol.edu.ec/webservices/">
+      <s:element name="autenticacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varContrasenia" type="s:string" />
+          </s:sequence>
+
+        </s:complexType>
+      </s:element>
+      <s:element name="autenticacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="autenticacionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+
+      <s:element name="busquedaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUnidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRol" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strApellido" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+
+      </s:element>
+      <s:element name="busquedaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedaUsuarioResult">
+              <s:complexType>
+                <s:sequence>
+                   <s:any minOccurs="2" maxOccurs="2"/> 
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="datosUsuario">
+        <s:complexType>
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="1" name="varUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varContrasenia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="datosUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datosUsuarioResult">
+
+              <s:complexType>
+                <s:sequence>
+                   <s:any minOccurs="2" maxOccurs="2"/> 
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+
+      </s:element>
+      <s:element name="consultaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varContrasenia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+
+      </s:element>
+      <s:element name="consultaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultaUsuarioResult">
+              <s:complexType>
+                <s:sequence>
+                   <s:any minOccurs="2" maxOccurs="2"/> 
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="autenticacionSoapIn">
+
+    <wsdl:part name="parameters" element="tns:autenticacion" />
+  </wsdl:message>
+  <wsdl:message name="autenticacionSoapOut">
+    <wsdl:part name="parameters" element="tns:autenticacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedaUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="busquedaUsuarioSoapOut">
+
+    <wsdl:part name="parameters" element="tns:busquedaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="datosUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:datosUsuario" />
+  </wsdl:message>
+  <wsdl:message name="datosUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:datosUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaUsuarioSoapIn">
+
+    <wsdl:part name="parameters" element="tns:consultaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="consultaUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:consultaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="directorioEspolSoap">
+    <wsdl:operation name="autenticacion">
+      <wsdl:input message="tns:autenticacionSoapIn" />
+      <wsdl:output message="tns:autenticacionSoapOut" />
+
+    </wsdl:operation>
+    <wsdl:operation name="busquedaUsuario">
+      <wsdl:input message="tns:busquedaUsuarioSoapIn" />
+      <wsdl:output message="tns:busquedaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="datosUsuario">
+      <wsdl:input message="tns:datosUsuarioSoapIn" />
+      <wsdl:output message="tns:datosUsuarioSoapOut" />
+    </wsdl:operation>
+
+    <wsdl:operation name="consultaUsuario">
+      <wsdl:input message="tns:consultaUsuarioSoapIn" />
+      <wsdl:output message="tns:consultaUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="directorioEspolSoap" type="tns:directorioEspolSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="autenticacion">
+      <soap:operation soapAction="http://academico.espol.edu.ec/webservices/autenticacion" style="document" />
+
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaUsuario">
+      <soap:operation soapAction="http://academico.espol.edu.ec/webservices/busquedaUsuario" style="document" />
+
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="datosUsuario">
+      <soap:operation soapAction="http://academico.espol.edu.ec/webservices/datosUsuario" style="document" />
+
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaUsuario">
+      <soap:operation soapAction="http://academico.espol.edu.ec/webservices/consultaUsuario" style="document" />
+
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="directorioEspolSoap12" type="tns:directorioEspolSoap">
+
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="autenticacion">
+      <soap12:operation soapAction="http://academico.espol.edu.ec/webservices/autenticacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+
+    </wsdl:operation>
+    <wsdl:operation name="busquedaUsuario">
+      <soap12:operation soapAction="http://academico.espol.edu.ec/webservices/busquedaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+
+    </wsdl:operation>
+    <wsdl:operation name="datosUsuario">
+      <soap12:operation soapAction="http://academico.espol.edu.ec/webservices/datosUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+
+    </wsdl:operation>
+    <wsdl:operation name="consultaUsuario">
+      <soap12:operation soapAction="http://academico.espol.edu.ec/webservices/consultaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="directorioEspol">
+    <wsdl:port name="directorioEspolSoap" binding="tns:directorioEspolSoap">
+      <soap:address location="https://www.academico.espol.edu.ec/services/directorioEspol.asmx" />
+    </wsdl:port>
+    <wsdl:port name="directorioEspolSoap12" binding="tns:directorioEspolSoap12">
+      <soap12:address location="https://www.academico.espol.edu.ec/services/directorioEspol.asmx" />
+    </wsdl:port>
+
+  </wsdl:service>
+</wsdl:definitions>

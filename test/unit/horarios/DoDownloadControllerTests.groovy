@@ -1,0 +1,17 @@
+package horarios
+
+import grails.test.*
+
+class DoDownloadControllerTests extends ControllerUnitTestCase {
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testSomething() {
+
+    }
+}

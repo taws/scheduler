@@ -1,0 +1,547 @@
+form {
+	padding: 20px;
+	background: #E6EDF5;
+	right: 10px;
+        margin-left: -1px;
+}
+.form {
+	padding: 20px;
+	background: #E6EDF5;
+	right: 10px;
+        margin-left: -1px;
+}
+
+label {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #4F76A3;
+}
+
+/*tomado del guru del programador: http://www.scourdesign.com/articulos/tutoriales/css/css9.php
+modificado: DeniC*/
+select { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    background-color: #6699CC; 
+    border: #000099; 
+    border-style: solid; 
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: 1px; 
+    border-left-width: 1px
+}
+input { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;  
+    color: #FFFFFF; 
+    background-color: #6699CC; 
+    border: #000099; 
+    border-style: solid; 
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: 1px; 
+    border-left-width: 1px
+}
+button { 
+    font-family: Arial, Helvetica, sans-serif; 
+
+    color: #4F76A3;
+    font-size: 100% !important;
+
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: 1px; 
+    border-left-width: 1px
+}
+
+
+/*fin de estilo interneC*/
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/img01.gif) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #8E959B;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #E55D13;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Header */
+
+#header {
+	width: 706px;
+	height: 225px;
+        margin: 0px 20px;
+	padding: 12px 0 0 0;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 208px;
+	height: 208px;
+	padding: 0 15px 0 0;
+	background: url(images/img02.jpg) no-repeat;
+}
+
+#logo h1 {
+	padding: 120px 0 0 0;
+	text-align: center;
+	letter-spacing: -3px;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+#logo h2 {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 13px;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+#logo a:hover {
+	color: #990000;
+}
+
+/* Menu */
+
+#menu {
+	float: left;
+	padding: 0 0 0 0;
+}
+
+#menu ul {
+	height: 55px;
+	margin: 0;
+	padding: 23px 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 43px;
+	padding-top: 12px;
+	background: url(images/img03.jpg) no-repeat;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+	font-size: 22px;
+}
+
+#menu a:hover, #menu .active a{
+	background-image: url(images/img04.jpg);
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+        
+        margin: 0px 2px;
+        margin-right: 1%;
+        height: auto;
+        position: absolute;
+        left: 220px;
+        top: 110px;
+}
+
+#content1 {
+        
+	width: 800px;
+	margin: 0px 20px;
+}
+
+/* Posts */
+
+#posts {
+        /*position: absolute;
+        margin-top: 0px;
+        margin-left: 250px;*/
+        background: aqua;
+	/*width: 800px;*/
+}
+
+.post {
+	padding-bottom: 1em;
+}
+
+.post .title {
+	padding-top: 10px;
+	letter-spacing: -.1em;
+	font-size: 2em;
+	font-weight: normal;
+	color: #8E959B;
+}
+
+.post .date {
+	height: 20px;
+	padding: 2px 0 0 10px;
+	background: url(images/img12.gif) no-repeat;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.post .story {
+	padding: 0 20px;
+	line-height: 1.6em;
+}
+
+.post .meta {
+	height: 40px;
+	margin: 0 20px;
+	padding: 0 0 0 10px;
+	background: #EEEDED url(images/img13.gif) no-repeat;
+}
+
+.post .meta span {
+	display: none;
+}
+
+.post .meta p {
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+.post .meta a {
+	float: left;
+	height: 20px;
+	padding: 4px 20px 0 37px;
+	text-decoration: none;
+	font-size: small;
+	font-weight: bold;
+	color: #777777;
+}
+
+.post .meta a:hover {
+	color: #E55D13;
+}
+
+.post .category {
+	background: url(images/img14.gif) no-repeat left bottom;
+}
+
+.post .comments {
+	background: url(images/img15.gif) no-repeat left bottom;
+}
+
+/* Bar */
+
+#bar {
+	float: left;
+	width: 200px;
+}
+
+/* Box Style One */
+
+.boxed1 {
+        margin: 0;
+	padding: 0;
+	background: #E4E9C5 url(images/img07.gif) no-repeat left bottom;
+	margin-bottom: 50px;
+        padding-bottom: 20px;
+}
+
+.boxed1 h2 {
+	height: 40px;
+	margin: 0 0 2px 0;
+	padding: 10px 0 0 50px;
+	background: #AFB43C url(images/img06.jpg) no-repeat;
+	text-transform: lowercase;
+	letter-spacing: -2px;
+	font-size: 26px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.boxed1 p {
+	font-size: small;
+        margin: 0px;
+        padding-left: 10px;
+}
+
+.boxed1 label {
+    background: transparent url(images/img08.gif) repeat-x scroll 0%;
+    font-size: small;
+    padding: 12px;
+    width: 20px;
+}
+.boxed1 input
+{
+    float: rigth;
+    background: white;
+    color: gray;
+    width: 80px;
+    border: 1px solid;
+}
+.boxed1 button
+{
+    font-size: small;
+    float: right;
+    padding-top: 10px;
+}
+
+/* Box Style Two */
+
+.boxed2 {
+        position: absolute;
+        top: 255px;
+        left: 840px;
+        /*float: right;*/
+	margin-bottom: 20px;
+        width: 200px;
+
+}
+
+.boxed2 h2 {
+       
+	height: 40px;
+	margin: 0 0 2px 0;
+	padding: 10px 0 0 50px;
+	background: #E6EDF5 url(images/img09.jpg) no-repeat;
+	text-transform: lowercase;
+	letter-spacing: -2px;
+	font-size: 26px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.boxed2 ul {
+	margin: 0;
+	padding: 0;
+	background: #C5DFE9 url(images/img10.gif) no-repeat left bottom;
+	list-style: none;
+}
+
+.boxed2 li {
+	padding: 10px;
+	background: #FCFDFE url(images/img11.gif) repeat-x;
+	font-size: 9pt;
+        /*background: #FCFDFE;*/
+        /*text-align: center;*/
+}
+
+.boxed2 a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #3F95B8;
+
+}
+
+.boxed2 a:hover {
+	color: #204B5C;
+}
+
+.boxed2 .active, .boxed2 .active a {
+	background-color: #204B5C;
+	color: #FFFFFF;
+}
+
+/* Box Style Three */
+
+.boxed3 {
+	text-align: justify;
+	font-size: small;
+}
+
+.boxed3 h2 {
+	height: 40px;
+	margin: 0 0 10px 0;
+	border-bottom: 2px solid #CCCCCC;
+	text-transform: lowercase;
+	letter-spacing: -2px;
+	font-size: 26px;
+	font-weight: normal;
+}
+
+.boxed3 a {
+	text-decoration: none;
+	color: #8E959B;
+}
+
+.boxed3 a:hover {
+	color: #E55D13;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 700px;
+	height: 60px;
+	margin: 0 20px;
+	background: #EB850C url(images/img16.gif) no-repeat;
+	font-size: small;
+	font-weight: bold;
+	color: #FFFFFF;
+        margin-left: 200px;
+}
+
+#footer p {
+	margin: 0;
+        width: 300;
+        padding-left: 200px;
+        
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#copy {
+	float: left;
+	padding: 20px 15px;
+}
+
+#feed {
+	float: right;
+	height: 30px;
+	padding: 20px 15px 0 35px;
+	background: url(images/img18.gif) no-repeat 0 15px;
+}
+
+/* 
+	Cusco Sky table styles
+	written by Braulio Soncco http://www.buayacorp.com
+*/
+
+table, th, td {
+	border: 1px solid #D4E0EE;
+	border-collapse: collapse;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #555;
+}
+
+caption {
+	font-size: 150%;
+	font-weight: bold;
+	margin: 5px;
+}
+
+td, th {
+        text-align: center;
+        font-size: 9pt;
+	padding: 4px;
+}
+
+thead th {
+	text-align: center;
+	background: #E6EDF5;
+	color: #4F76A3;
+	font-size: 100% !important;
+        width: 300px;
+}
+
+tbody th {
+	font-weight: bold;
+}
+
+tbody tr { background: #FCFDFE; }
+
+tbody tr.odd { background: #F7F9FC; }
+
+table a:link {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+table a:visited {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+table a:hover {
+	color: #718ABE;
+	text-decoration: underline !important;
+}
+
+tfoot th, tfoot td {
+	font-size: 75%;
+}
+/*Estilo Copiado desde InterneC*/
+
+button.btn{
+    color: #050;
+    margin-top: -15px;
+    margin-right: 5px;
+    padding: 2px;
+    font-family: 'trebuchet ms',helvetica,sans-serif;
+    font-size: 84%;
+    font-weight: bold;
+    background-color: #fed;
+    border: 1px solid;
+    border-top-color: #696;
+    border-left-color: #696;
+    border-right-color: #363;
+    border-bottom-color: #363;
+}
+.img_cancelar{
+    position: absolute;
+    right: 2px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+
+/*Pagina horariosIngresar.jsp estilos*/
+#cb_aula{
+    margin-left: 19px;
+}
+/*Fin*/
+
+.boxed1 label#usr{
+    margin-left: -18px !important;
+    margin-right: 10px !important;
+}
+
+.boxed1 label#psw{
+    margin-left: -20px !important;
+    margin-right: -10px !important;
+}
+
+form{
+    background: transparent !important;
+    margin-left: 22px !important;
+    padding: 0 !important;
+}
+
+.boxed1 form input {
+    border-style: inset !important;
+    color: #8E959B !important;
+    width: 91px;
+}
+
+.boxed1 label {
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif !important;
+    color: #8E959B !important;
+}

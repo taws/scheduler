@@ -1,0 +1,356 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	background: #FFFFFF url(../images/free/img01.gif) repeat-x 0 130px;
+	font: normal small Verdana, Arial, Helvetica, sans-serif;
+	color: #959595;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #385B88;
+}
+
+h2 {
+	margin-bottom: .8em;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+h3 {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+p, blockquote, ul, ol {
+	margin-bottom: 1.4em;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+p {
+}
+
+blockquote {
+	margin-left: 2em;
+	margin-right: 2em;
+	font-style: italic;
+}
+
+ul {
+	margin-left: 3em;
+}
+
+ul li {
+}
+
+ol {
+	margin-left: 3em;
+}
+
+ol li {
+}
+
+a {
+	text-decoration: none;
+	color: #E08934;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+}
+
+/* Boxed Style */
+
+.boxed {
+}
+
+.boxed .title {
+	padding: 0px 0 0 10px;
+	background: url(../images/free/img03.gif) no-repeat left center;
+	border-bottom: 1px solid #D6D5D5;
+	font-size: 1.4em;
+}
+
+.boxed .content {
+	padding: 10px;
+}
+
+/* Post */
+
+.post {
+}
+
+.post .title {
+	margin: 0;
+	padding: 0 0 0 10px;
+	border-bottom: 1px solid #D6D5D5;
+}
+
+.post .date {
+	margin-top: -26px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.post .date .month {
+	display: block;
+	float: right;
+	width: 60px;
+	margin-bottom: 3px;
+	padding: 5px 0;
+	background: #D6D5D5;
+	text-align: center;
+	font-size: 11px;
+}
+
+.post .date .day {
+	display: block;
+	float: right;
+	clear: right;
+	width: 60px;
+	margin-bottom: 1px;
+	padding: 10px 0;
+	background: #EAEAEA;
+	text-align: center;
+	font-size: 24px;
+}
+
+.post .date .year {
+	display: none;
+}
+
+.post .meta {
+	padding: 0px 0 5px 10px;
+	border-bottom: 1px solid #EAEAEA;
+	font-size:12px;
+        margin-bottom:48px;
+        padding-top:25px;
+}
+
+.post .meta p {
+	margin: 0;
+}
+
+.post .story {
+	padding: 20px 40px;
+}
+
+/* Logo */
+
+#logo {
+	width: 870px;
+	height: 200px;
+	margin: 0 auto;
+	background: url(../images/free/logoTAWS.png) no-repeat 0 13px;
+}
+
+#logo h1 {
+	padding: 106px 0 0 40px;
+}
+
+#logo h1 a {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+#logo h1 i {
+	text-transform: lowercase;
+	letter-spacing: -3px;
+	font: italic normal 48px Georgia, "Times New Roman", Times, serif;
+	color: #385B88;
+}
+
+#logo h2 {
+	padding: 0 0 0 42px;
+	text-transform: lowercase;
+	font-size: 1em;
+}
+
+#logo a {
+}
+
+/* Content */
+
+#content {
+	width: 870px;
+	margin: 0 auto;
+}
+
+/* Content > Main */
+
+#main {
+	float: right;
+	width: 600px;
+	margin-top: -170px;
+}
+
+/* Content > Main > Welcome */
+
+#welcome {
+    margin-top:18px;
+    margin-bottom:30px;
+}
+
+/* Content > Main > Example */
+
+#example {
+}
+
+/* Content > Sidebar */
+
+#sidebar {
+	float: left;
+	width: 240px;
+}
+
+/* Content > Sidebar > Login */
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+#login input {
+	margin-bottom: 5px;
+	padding: 2px 5px;
+	border: 1px solid #385B88;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#inputtext1, #inputtext2 {
+	color: #385B88;
+}
+
+#inputsubmit1 {
+	background: #385B88;
+	color: #FFFFFF;
+}
+
+/* Content > Sidebar > Menu */
+
+#menu {
+	margin-bottom: 30px;
+	border-bottom: 4px solid #EBEBEB;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	padding: 10px 0 10px 24px;
+	background: url(../images/free/img05.gif) no-repeat 10px 17px;
+	border-top: 1px solid #EBEBEB;
+	color: #E08934;
+}
+
+#menu a:hover, #menu .active a {
+	background: #EBEEF3;
+	text-decoration: none;
+	font-weight: bold;
+	color: #385B88;
+}
+
+/* Content > Sidebar > Updates*/
+
+#updates {
+}
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+/* Content > Sidebar > Partners*/
+
+#partners {
+}
+
+#partners .content {
+	padding: 10px 0;
+}
+
+#partners ul {
+	margin: 0;
+	border-bottom: 1px solid #D1BC5C;
+	list-style: none;
+	line-height: normal;
+}
+
+#partners li {
+	padding: 10px;
+	border-top: 1px solid #D1BC5C;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	padding: 20px 50px;
+	border-top: 4px solid #D6D5D5;
+	background: #EAEAEA;
+}
+
+#footer p {
+	width: 770px;
+	margin: 0 auto;
+	font-size: x-small;
+}
+
+/* Footer > Legal */
+
+#legal {
+}
+
+/* Footer > Links */
+
+#links {
+}
