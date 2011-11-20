@@ -1,4 +1,4 @@
-function loadSchedule(url) {
+function loadSchedule(url,link_to_share) {
 
     //var url = url;
     var ctrl;
@@ -39,7 +39,7 @@ function loadSchedule(url) {
             onSuccess: function(schedule) {
 
                 if(schedule.responseJSON.constructor.toString().indexOf("Array") != -1) {
-                    linkToShare(user, password);
+                    linkToShare(user, password,link_to_share);
                     Subject.chargeJSON(schedule.responseJSON);
                     
                 } else {
@@ -65,9 +65,9 @@ function loadSchedule(url) {
 
 }
 
-function linkToShare(user,password) {
+function linkToShare(user,password,link_to_share) {
 
-    var link_to_share = "link_to_share";
+    //var link_to_share = "link_to_share";
     new Ajax.Request(link_to_share,{
         method: "POST",
         parameters: {

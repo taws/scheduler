@@ -45,11 +45,11 @@ class viewerActions extends sfActions
               $doc = new DOMDocument('1.0', 'utf-8');
               $doc->loadXML($results);
               $elements = $doc->getElementsByTagName("DATOS_USUARIO");
-
+              
               if($elements->length > 0) {
                   $node = $elements->item(0);
                   $matricula = $node->getElementsByTagName("MATRICULA")->length!=0 ? $node->getElementsByTagName("MATRICULA")->item(0)->nodeValue : "";
-
+                  
                   $this->getRequest()->setParameter('matricula', $matricula);
                   $this->getRequest()->setParameter('internal', true);
                   $this->forward('viewer', 'scheduler');

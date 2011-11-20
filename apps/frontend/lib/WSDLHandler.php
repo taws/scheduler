@@ -20,7 +20,9 @@ class WSDLHandler {
     }
 
     public function initDirectorioEspolHandler() {
-        $this->client = new SoapClient(sfConfig::get("sf_web_dir") . $this->directorioEspol, array());
+        
+        $this->client = new  SoapClient(sfConfig::get("sf_web_dir") . $this->directorioEspol, array());
+        
     }
 
     public function authenticate($user,$password) {
@@ -50,6 +52,8 @@ class WSDLHandler {
         $results = str_replace('<xs:element name="CELULAR" type="xs:string" minOccurs="0"/><xs:element name="SEXO" type="xs:string" minOccurs="0"/><xs:element name="CARRERA" type="xs:string" minOccurs="0"/><xs:element name="ESPECIALIZACION" type="xs:string" minOccurs="0"/><xs:element name="FECHANACIMIENTO" type="xs:string" minOccurs="0"/><xs:element name="PROMEDIO" type="xs:decimal" minOccurs="0"/><xs:element name="MATERIASAPROBADAS" type="xs:int" minOccurs="0"/><xs:element name="LASTCHANGED" type="xs:dateTime" minOccurs="0"/></xs:sequence></xs:complexType></xs:element></xs:choice></xs:complexType></xs:element></xs:schema><diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">', "", $results);
         $results = str_replace('<NewDataSet xmlns="">', "", $results);
         $results = str_replace('</diffgr:diffgram>', "", $results);
+        $results = str_replace('diffgr:id="DATOS_USUARIO1"', "", $results);
+        $results = str_replace('msdata:rowOrder="0"', "", $results);
         return $results;
     }
 
@@ -62,6 +66,8 @@ class WSDLHandler {
         $results = str_replace('</soap:Envelope>', "", $results);
         $results = str_replace('msdata:', "", $results);
         $results = str_replace('diffgr:', "", $results);
+        $results = str_replace('diffgr:id="DATOS_USUARIO1"', "", $results);
+        $results = str_replace('msdata:rowOrder="0"', "", $results);
         return $results;
     }
 }

@@ -57,7 +57,7 @@
                                     <td><input type="text" value="" name="user" id="user" /></td>
                                     <td><input type="password" value="" name="password" id="password" /></td>
                                     <td>
-                                        <label id="label_search" onclick="loadSchedule('<?php echo url_for1('authentication') ?>'); return false;">Ver Horario</label>
+                                        <label id="label_search" onclick="loadSchedule('<?php echo url_for1('authentication') ?>','<?php echo url_for1('link_to_share') ?>'); return false;">Ver Horario</label>
                                     </td>
                                     <td id="finder">
                                     </td>
