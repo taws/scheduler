@@ -4557,3 +4557,1398 @@ Oct 11 17:49:03 symfony [info] {sfWebDebugLogger} Factories 93.77 ms (1)
 Oct 11 17:49:03 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.23 ms (1)
 Oct 11 17:49:03 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 69.18 ms (1)
 Oct 11 17:49:03 symfony [info] {sfWebResponse} Send content (35585 o)
+Nov 19 21:03:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:03:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:03:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:03:31 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:03:31 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:03:31 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:03:31 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:03:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:03:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:03:31 symfony [info] {sfWebDebugLogger} Configuration 3702.92 ms (9)
+Nov 19 21:03:31 symfony [info] {sfWebDebugLogger} Factories 981.94 ms (1)
+Nov 19 21:03:31 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:03:31 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 268.65 ms (1)
+Nov 19 21:03:32 symfony [info] {sfWebResponse} Send content (33239 o)
+Nov 19 21:06:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:06:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:06:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:06:48 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:06:48 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:06:48 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:06:48 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:06:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:06:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:06:48 symfony [info] {sfWebDebugLogger} Configuration 60.09 ms (9)
+Nov 19 21:06:48 symfony [info] {sfWebDebugLogger} Factories 276.94 ms (1)
+Nov 19 21:06:48 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.32 ms (1)
+Nov 19 21:06:48 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.29 ms (1)
+Nov 19 21:06:48 symfony [info] {sfWebResponse} Send content (33571 o)
+Nov 19 21:09:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:09:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:09:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:09:25 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:09:25 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:09:25 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:09:25 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:09:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:09:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:09:25 symfony [info] {sfWebDebugLogger} Configuration 59.79 ms (9)
+Nov 19 21:09:25 symfony [info] {sfWebDebugLogger} Factories 366.29 ms (1)
+Nov 19 21:09:25 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.23 ms (1)
+Nov 19 21:09:25 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 155.22 ms (1)
+Nov 19 21:09:25 symfony [info] {sfWebResponse} Send content (33576 o)
+Nov 19 21:10:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:10:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:10:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:10:35 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:10:35 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:10:35 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:10:35 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:10:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:10:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:10:35 symfony [info] {sfWebDebugLogger} Configuration 46.16 ms (9)
+Nov 19 21:10:35 symfony [info] {sfWebDebugLogger} Factories 248.27 ms (1)
+Nov 19 21:10:35 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 21:10:35 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 105.02 ms (1)
+Nov 19 21:10:36 symfony [info] {sfWebResponse} Send content (33515 o)
+Nov 19 21:11:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:11:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:11:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:11:37 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:11:37 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:11:37 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:11:37 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:11:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:11:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:11:37 symfony [info] {sfWebDebugLogger} Configuration 43.21 ms (9)
+Nov 19 21:11:37 symfony [info] {sfWebDebugLogger} Factories 245.08 ms (1)
+Nov 19 21:11:37 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:11:37 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.76 ms (1)
+Nov 19 21:11:37 symfony [info] {sfWebResponse} Send content (33547 o)
+Nov 19 21:12:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:12:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:12:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:12:02 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:12:02 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:12:02 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:12:02 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:12:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:12:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:12:02 symfony [info] {sfWebDebugLogger} Configuration 46.30 ms (9)
+Nov 19 21:12:02 symfony [info] {sfWebDebugLogger} Factories 114.62 ms (1)
+Nov 19 21:12:02 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.26 ms (1)
+Nov 19 21:12:02 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 64.60 ms (1)
+Nov 19 21:12:02 symfony [info] {sfWebResponse} Send content (33515 o)
+Nov 19 21:13:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:13:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:13:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:13:10 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:13:10 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:13:10 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:13:10 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:13:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:13:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:13:10 symfony [info] {sfWebDebugLogger} Configuration 46.05 ms (9)
+Nov 19 21:13:10 symfony [info] {sfWebDebugLogger} Factories 106.18 ms (1)
+Nov 19 21:13:10 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 21:13:10 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 48.82 ms (1)
+Nov 19 21:13:10 symfony [info] {sfWebResponse} Send content (33547 o)
+Nov 19 21:15:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:15:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:15:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:15:52 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:15:52 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:15:52 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:15:52 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:15:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:15:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:15:52 symfony [info] {sfWebDebugLogger} Configuration 44.50 ms (9)
+Nov 19 21:15:52 symfony [info] {sfWebDebugLogger} Factories 234.23 ms (1)
+Nov 19 21:15:52 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:15:52 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.36 ms (1)
+Nov 19 21:15:52 symfony [info] {sfWebResponse} Send content (33547 o)
+Nov 19 21:16:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:16:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:16:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:16:14 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:16:14 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:16:14 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:16:14 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:16:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:16:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:16:14 symfony [info] {sfWebDebugLogger} Configuration 40.51 ms (9)
+Nov 19 21:16:14 symfony [info] {sfWebDebugLogger} Factories 216.88 ms (1)
+Nov 19 21:16:14 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.23 ms (1)
+Nov 19 21:16:14 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.76 ms (1)
+Nov 19 21:16:14 symfony [info] {sfWebResponse} Send content (33547 o)
+Nov 19 21:18:58 symfony [info] {sfPatternRouting} Match route "authentication" (/A/1qM) for /A/1qM with parameters array (  'module' => 'viewer',  'action' => 'authentication',)
+Nov 19 21:18:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:18:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:18:58 symfony [info] {viewerActions} Call "viewerActions->executeAuthentication()"
+Nov 19 21:18:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:18:58 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Nov 19 21:18:58 symfony [info] {sfWebDebugLogger} Configuration 41.44 ms (8)
+Nov 19 21:18:58 symfony [info] {sfWebDebugLogger} Factories 294.70 ms (1)
+Nov 19 21:18:58 symfony [info] {sfWebDebugLogger} Action "viewer/authentication" 35.36 ms (1)
+Nov 19 21:18:58 symfony [info] {sfWebDebugLogger} View "None" for "viewer/authentication" 0.12 ms (1)
+Nov 19 21:18:58 symfony [info] {sfWebResponse} Send content (55 o)
+Nov 19 21:19:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:19:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:19:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:19:27 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:19:27 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:19:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:19:27 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:19:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:19:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:19:27 symfony [info] {sfWebDebugLogger} Configuration 46.40 ms (9)
+Nov 19 21:19:27 symfony [info] {sfWebDebugLogger} Factories 219.24 ms (1)
+Nov 19 21:19:27 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 21:19:27 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 119.60 ms (1)
+Nov 19 21:19:27 symfony [info] {sfWebResponse} Send content (33570 o)
+Nov 19 21:20:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:20:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:20:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:20:10 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:20:10 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:20:10 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:20:10 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:20:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:20:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:20:10 symfony [info] {sfWebDebugLogger} Configuration 46.11 ms (9)
+Nov 19 21:20:10 symfony [info] {sfWebDebugLogger} Factories 232.98 ms (1)
+Nov 19 21:20:10 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:20:10 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 136.89 ms (1)
+Nov 19 21:20:10 symfony [info] {sfWebResponse} Send content (33547 o)
+Nov 19 21:20:16 symfony [info] {sfPatternRouting} Match route "authentication" (/A/1qM) for /A/1qM with parameters array (  'module' => 'viewer',  'action' => 'authentication',)
+Nov 19 21:20:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:20:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:20:16 symfony [info] {viewerActions} Call "viewerActions->executeAuthentication()"
+Nov 19 21:23:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:23:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:23:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:23:34 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:23:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:23:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:23:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:23:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:23:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:23:34 symfony [info] {sfWebDebugLogger} Configuration 47.04 ms (9)
+Nov 19 21:23:34 symfony [info] {sfWebDebugLogger} Factories 117.43 ms (1)
+Nov 19 21:23:34 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:23:34 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 53.87 ms (1)
+Nov 19 21:23:34 symfony [info] {sfWebResponse} Send content (33547 o)
+Nov 19 21:33:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:33:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:33:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:33:50 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:33:50 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:33:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:33:50 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:33:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:33:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:33:50 symfony [info] {sfWebDebugLogger} Configuration 44.84 ms (9)
+Nov 19 21:33:50 symfony [info] {sfWebDebugLogger} Factories 251.42 ms (1)
+Nov 19 21:33:50 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.24 ms (1)
+Nov 19 21:33:50 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 112.23 ms (1)
+Nov 19 21:33:50 symfony [info] {sfWebResponse} Send content (33577 o)
+Nov 19 21:34:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:34:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:34:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:34:34 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:34:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:34:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:34:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:34:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:34:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:34:34 symfony [info] {sfWebDebugLogger} Configuration 44.59 ms (9)
+Nov 19 21:34:34 symfony [info] {sfWebDebugLogger} Factories 226.38 ms (1)
+Nov 19 21:34:34 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:34:34 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.49 ms (1)
+Nov 19 21:34:34 symfony [info] {sfWebResponse} Send content (33605 o)
+Nov 19 21:34:46 symfony [info] {sfPatternRouting} Match route "authentication" (/A/1qM) for /A/1qM with parameters array (  'module' => 'viewer',  'action' => 'authentication',)
+Nov 19 21:34:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:34:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:34:46 symfony [info] {viewerActions} Call "viewerActions->executeAuthentication()"
+Nov 19 21:34:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:34:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:34:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:34:51 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:34:51 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:34:51 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:34:51 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:34:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:34:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:34:51 symfony [info] {sfWebDebugLogger} Configuration 41.46 ms (9)
+Nov 19 21:34:51 symfony [info] {sfWebDebugLogger} Factories 100.40 ms (1)
+Nov 19 21:34:51 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:34:51 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 58.00 ms (1)
+Nov 19 21:34:51 symfony [info] {sfWebResponse} Send content (33582 o)
+Nov 19 21:36:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:36:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:36:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:36:54 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:36:54 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:36:54 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:36:54 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:36:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:36:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:36:54 symfony [info] {sfWebDebugLogger} Configuration 46.17 ms (9)
+Nov 19 21:36:54 symfony [info] {sfWebDebugLogger} Factories 255.24 ms (1)
+Nov 19 21:36:54 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 21:36:54 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 119.28 ms (1)
+Nov 19 21:36:54 symfony [info] {sfWebResponse} Send content (33662 o)
+Nov 19 21:39:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:39:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:39:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:39:05 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:39:05 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:39:05 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:39:05 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:39:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:39:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:39:05 symfony [info] {sfWebDebugLogger} Configuration 45.87 ms (9)
+Nov 19 21:39:05 symfony [info] {sfWebDebugLogger} Factories 233.44 ms (1)
+Nov 19 21:39:05 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.27 ms (1)
+Nov 19 21:39:05 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 116.75 ms (1)
+Nov 19 21:39:05 symfony [info] {sfWebResponse} Send content (33662 o)
+Nov 19 21:39:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:39:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:39:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:39:27 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:39:27 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:39:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:39:27 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:39:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:39:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:39:27 symfony [info] {sfWebDebugLogger} Configuration 40.55 ms (9)
+Nov 19 21:39:27 symfony [info] {sfWebDebugLogger} Factories 227.47 ms (1)
+Nov 19 21:39:27 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 21:39:27 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.15 ms (1)
+Nov 19 21:39:27 symfony [info] {sfWebResponse} Send content (33662 o)
+Nov 19 21:40:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:40:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:40:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:40:06 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:40:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:40:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:40:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:40:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:40:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:40:06 symfony [info] {sfWebDebugLogger} Configuration 56.60 ms (9)
+Nov 19 21:40:06 symfony [info] {sfWebDebugLogger} Factories 234.20 ms (1)
+Nov 19 21:40:06 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 21:40:06 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 119.61 ms (1)
+Nov 19 21:40:06 symfony [info] {sfWebResponse} Send content (33662 o)
+Nov 19 21:41:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:41:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:41:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:41:38 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:41:38 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:41:38 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:41:38 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:41:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:41:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:41:38 symfony [info] {sfWebDebugLogger} Configuration 41.57 ms (9)
+Nov 19 21:41:38 symfony [info] {sfWebDebugLogger} Factories 238.50 ms (1)
+Nov 19 21:41:38 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 21:41:38 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 106.64 ms (1)
+Nov 19 21:41:38 symfony [info] {sfWebResponse} Send content (33719 o)
+Nov 19 21:43:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:43:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:43:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:43:38 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:43:38 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:43:38 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:43:38 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:43:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:43:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:43:38 symfony [info] {sfWebDebugLogger} Configuration 43.98 ms (9)
+Nov 19 21:43:38 symfony [info] {sfWebDebugLogger} Factories 231.50 ms (1)
+Nov 19 21:43:38 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.23 ms (1)
+Nov 19 21:43:38 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.88 ms (1)
+Nov 19 21:43:38 symfony [info] {sfWebResponse} Send content (33701 o)
+Nov 19 21:44:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:44:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:44:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:44:52 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:44:52 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:44:52 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:44:52 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:44:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:44:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:44:52 symfony [info] {sfWebDebugLogger} Configuration 43.42 ms (9)
+Nov 19 21:44:52 symfony [info] {sfWebDebugLogger} Factories 231.67 ms (1)
+Nov 19 21:44:52 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 21:44:52 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.48 ms (1)
+Nov 19 21:44:52 symfony [info] {sfWebResponse} Send content (33701 o)
+Nov 19 21:45:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:45:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:45:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:45:36 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:45:36 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:45:36 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:45:36 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:45:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:45:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:45:36 symfony [info] {sfWebDebugLogger} Configuration 40.30 ms (9)
+Nov 19 21:45:36 symfony [info] {sfWebDebugLogger} Factories 223.20 ms (1)
+Nov 19 21:45:36 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 21:45:36 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.07 ms (1)
+Nov 19 21:45:36 symfony [info] {sfWebResponse} Send content (33701 o)
+Nov 19 21:47:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:47:43 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:47:43 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:47:43 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:47:43 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:47:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:47:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:47:43 symfony [info] {sfWebDebugLogger} Configuration 44.16 ms (9)
+Nov 19 21:47:43 symfony [info] {sfWebDebugLogger} Factories 240.26 ms (1)
+Nov 19 21:47:43 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:47:43 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.41 ms (1)
+Nov 19 21:47:43 symfony [info] {sfWebResponse} Send content (33749 o)
+Nov 19 21:50:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:50:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:50:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:50:33 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:50:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:50:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:50:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:50:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:50:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:50:34 symfony [info] {sfWebDebugLogger} Configuration 44.62 ms (9)
+Nov 19 21:50:34 symfony [info] {sfWebDebugLogger} Factories 232.55 ms (1)
+Nov 19 21:50:34 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:50:34 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.64 ms (1)
+Nov 19 21:50:34 symfony [info] {sfWebResponse} Send content (33749 o)
+Nov 19 21:51:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:51:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:51:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:51:22 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:51:22 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:51:22 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:51:22 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:51:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:51:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:51:22 symfony [info] {sfWebDebugLogger} Configuration 43.86 ms (9)
+Nov 19 21:51:22 symfony [info] {sfWebDebugLogger} Factories 222.58 ms (1)
+Nov 19 21:51:22 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 21:51:22 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.43 ms (1)
+Nov 19 21:51:22 symfony [info] {sfWebResponse} Send content (33749 o)
+Nov 19 21:52:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:52:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:52:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:52:30 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:52:30 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:52:30 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:52:30 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:52:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:52:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:52:30 symfony [info] {sfWebDebugLogger} Configuration 44.39 ms (9)
+Nov 19 21:52:30 symfony [info] {sfWebDebugLogger} Factories 234.72 ms (1)
+Nov 19 21:52:30 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 21:52:30 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 118.74 ms (1)
+Nov 19 21:52:30 symfony [info] {sfWebResponse} Send content (33751 o)
+Nov 19 21:53:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:53:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:53:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:53:27 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:53:27 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:53:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:53:27 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:53:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:53:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:53:27 symfony [info] {sfWebDebugLogger} Configuration 42.81 ms (9)
+Nov 19 21:53:27 symfony [info] {sfWebDebugLogger} Factories 237.32 ms (1)
+Nov 19 21:53:27 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:53:27 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.90 ms (1)
+Nov 19 21:53:27 symfony [info] {sfWebResponse} Send content (33762 o)
+Nov 19 21:54:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:54:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:54:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:54:13 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:54:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:54:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:54:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:54:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:54:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:54:13 symfony [info] {sfWebDebugLogger} Configuration 43.82 ms (9)
+Nov 19 21:54:13 symfony [info] {sfWebDebugLogger} Factories 228.63 ms (1)
+Nov 19 21:54:13 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 21:54:13 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.86 ms (1)
+Nov 19 21:54:13 symfony [info] {sfWebResponse} Send content (33749 o)
+Nov 19 21:56:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:56:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:56:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:56:08 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:56:08 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:56:08 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:56:08 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:56:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:56:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:56:08 symfony [info] {sfWebDebugLogger} Configuration 45.26 ms (9)
+Nov 19 21:56:08 symfony [info] {sfWebDebugLogger} Factories 233.08 ms (1)
+Nov 19 21:56:08 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 21:56:08 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 115.15 ms (1)
+Nov 19 21:56:08 symfony [info] {sfWebResponse} Send content (33749 o)
+Nov 19 21:58:19 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 21:58:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 21:58:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 21:58:19 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 21:58:19 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 21:58:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:58:19 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 21:58:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 21:58:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 21:58:20 symfony [info] {sfWebDebugLogger} Configuration 46.03 ms (9)
+Nov 19 21:58:20 symfony [info] {sfWebDebugLogger} Factories 233.73 ms (1)
+Nov 19 21:58:20 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 21:58:20 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 117.22 ms (1)
+Nov 19 21:58:20 symfony [info] {sfWebResponse} Send content (33726 o)
+Nov 19 22:00:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:00:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:00:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:00:15 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:00:15 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:00:15 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:00:15 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:00:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:00:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:00:15 symfony [info] {sfWebDebugLogger} Configuration 44.14 ms (9)
+Nov 19 22:00:15 symfony [info] {sfWebDebugLogger} Factories 240.69 ms (1)
+Nov 19 22:00:15 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:00:15 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.70 ms (1)
+Nov 19 22:00:15 symfony [info] {sfWebResponse} Send content (33788 o)
+Nov 19 22:00:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:00:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:00:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:00:35 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:00:35 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:00:35 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:00:35 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:00:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:00:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:00:35 symfony [info] {sfWebDebugLogger} Configuration 47.09 ms (9)
+Nov 19 22:00:35 symfony [info] {sfWebDebugLogger} Factories 231.25 ms (1)
+Nov 19 22:00:35 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:00:35 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 106.86 ms (1)
+Nov 19 22:00:35 symfony [info] {sfWebResponse} Send content (33788 o)
+Nov 19 22:01:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:01:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:01:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:01:39 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:01:39 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:01:39 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:01:39 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:01:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:01:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:01:39 symfony [info] {sfWebDebugLogger} Configuration 40.19 ms (9)
+Nov 19 22:01:39 symfony [info] {sfWebDebugLogger} Factories 223.81 ms (1)
+Nov 19 22:01:39 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:01:39 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.90 ms (1)
+Nov 19 22:01:39 symfony [info] {sfWebResponse} Send content (33806 o)
+Nov 19 22:02:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:02:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:02:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:02:31 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:02:31 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:02:31 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:02:31 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:02:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:02:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:02:31 symfony [info] {sfWebDebugLogger} Configuration 44.57 ms (9)
+Nov 19 22:02:31 symfony [info] {sfWebDebugLogger} Factories 232.43 ms (1)
+Nov 19 22:02:31 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.23 ms (1)
+Nov 19 22:02:31 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.98 ms (1)
+Nov 19 22:02:31 symfony [info] {sfWebResponse} Send content (33806 o)
+Nov 19 22:04:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:04:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:04:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:04:46 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:04:46 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:04:46 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:04:46 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:04:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:04:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:04:47 symfony [info] {sfWebDebugLogger} Configuration 47.46 ms (9)
+Nov 19 22:04:47 symfony [info] {sfWebDebugLogger} Factories 234.66 ms (1)
+Nov 19 22:04:47 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:04:47 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.08 ms (1)
+Nov 19 22:04:47 symfony [info] {sfWebResponse} Send content (33806 o)
+Nov 19 22:07:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:07:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:07:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:07:35 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:07:35 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:07:36 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:07:36 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:07:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:07:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:07:36 symfony [info] {sfWebDebugLogger} Configuration 46.75 ms (9)
+Nov 19 22:07:36 symfony [info] {sfWebDebugLogger} Factories 232.60 ms (1)
+Nov 19 22:07:36 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:07:36 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.53 ms (1)
+Nov 19 22:07:36 symfony [info] {sfWebResponse} Send content (33806 o)
+Nov 19 22:08:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:08:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:08:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:08:06 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:08:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:08:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:08:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:08:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:08:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:08:06 symfony [info] {sfWebDebugLogger} Configuration 44.39 ms (9)
+Nov 19 22:08:06 symfony [info] {sfWebDebugLogger} Factories 229.44 ms (1)
+Nov 19 22:08:06 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.25 ms (1)
+Nov 19 22:08:06 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 115.08 ms (1)
+Nov 19 22:08:06 symfony [info] {sfWebResponse} Send content (33806 o)
+Nov 19 22:08:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:08:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:08:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:08:55 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:08:55 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:08:55 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:08:55 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:08:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:08:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:08:55 symfony [info] {sfWebDebugLogger} Configuration 42.07 ms (9)
+Nov 19 22:08:55 symfony [info] {sfWebDebugLogger} Factories 215.99 ms (1)
+Nov 19 22:08:55 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:08:55 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 106.00 ms (1)
+Nov 19 22:08:55 symfony [info] {sfWebResponse} Send content (33821 o)
+Nov 19 22:09:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:09:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:09:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:09:50 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:09:50 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:09:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:09:50 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:09:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:09:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:09:51 symfony [info] {sfWebDebugLogger} Configuration 43.13 ms (9)
+Nov 19 22:09:51 symfony [info] {sfWebDebugLogger} Factories 249.54 ms (1)
+Nov 19 22:09:51 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:09:51 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.25 ms (1)
+Nov 19 22:09:51 symfony [info] {sfWebResponse} Send content (33988 o)
+Nov 19 22:11:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:11:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:11:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:11:13 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:11:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:11:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:11:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:11:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:11:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:11:13 symfony [info] {sfWebDebugLogger} Configuration 46.62 ms (9)
+Nov 19 22:11:13 symfony [info] {sfWebDebugLogger} Factories 229.62 ms (1)
+Nov 19 22:11:13 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:11:13 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 113.37 ms (1)
+Nov 19 22:11:13 symfony [info] {sfWebResponse} Send content (33969 o)
+Nov 19 22:13:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:13:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:13:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:13:03 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:13:03 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:13:03 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:13:03 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:13:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:13:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:13:03 symfony [info] {sfWebDebugLogger} Configuration 44.36 ms (9)
+Nov 19 22:13:03 symfony [info] {sfWebDebugLogger} Factories 232.44 ms (1)
+Nov 19 22:13:03 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 22:13:03 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.91 ms (1)
+Nov 19 22:13:03 symfony [info] {sfWebResponse} Send content (33969 o)
+Nov 19 22:14:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:14:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:14:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:14:47 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:14:47 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:14:47 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:14:47 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:14:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:14:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:14:47 symfony [info] {sfWebDebugLogger} Configuration 47.00 ms (9)
+Nov 19 22:14:47 symfony [info] {sfWebDebugLogger} Factories 214.49 ms (1)
+Nov 19 22:14:47 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:14:47 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 106.77 ms (1)
+Nov 19 22:14:47 symfony [info] {sfWebResponse} Send content (33991 o)
+Nov 19 22:15:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:15:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:15:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:15:42 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:15:42 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:15:42 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:15:42 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:15:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:15:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:15:42 symfony [info] {sfWebDebugLogger} Configuration 44.99 ms (9)
+Nov 19 22:15:42 symfony [info] {sfWebDebugLogger} Factories 227.57 ms (1)
+Nov 19 22:15:42 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:15:42 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 120.11 ms (1)
+Nov 19 22:15:42 symfony [info] {sfWebResponse} Send content (33991 o)
+Nov 19 22:16:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:16:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:16:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:16:13 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:16:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:16:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:16:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:16:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:16:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:16:13 symfony [info] {sfWebDebugLogger} Configuration 40.22 ms (9)
+Nov 19 22:16:13 symfony [info] {sfWebDebugLogger} Factories 219.46 ms (1)
+Nov 19 22:16:13 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 22:16:13 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.02 ms (1)
+Nov 19 22:16:13 symfony [info] {sfWebResponse} Send content (33968 o)
+Nov 19 22:16:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:16:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:16:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:16:28 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:16:28 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:16:28 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:16:28 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:16:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:16:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:16:28 symfony [info] {sfWebDebugLogger} Configuration 39.82 ms (9)
+Nov 19 22:16:28 symfony [info] {sfWebDebugLogger} Factories 216.59 ms (1)
+Nov 19 22:16:28 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:16:28 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.39 ms (1)
+Nov 19 22:16:28 symfony [info] {sfWebResponse} Send content (33991 o)
+Nov 19 22:16:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:16:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:16:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:16:43 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:16:43 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:16:43 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:16:43 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:16:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:16:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:16:43 symfony [info] {sfWebDebugLogger} Configuration 46.57 ms (9)
+Nov 19 22:16:43 symfony [info] {sfWebDebugLogger} Factories 251.21 ms (1)
+Nov 19 22:16:43 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:16:43 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.88 ms (1)
+Nov 19 22:16:43 symfony [info] {sfWebResponse} Send content (33991 o)
+Nov 19 22:17:00 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:17:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:17:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:17:00 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:17:00 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:17:01 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:17:01 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:17:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:17:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:17:01 symfony [info] {sfWebDebugLogger} Configuration 39.68 ms (9)
+Nov 19 22:17:01 symfony [info] {sfWebDebugLogger} Factories 235.59 ms (1)
+Nov 19 22:17:01 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:17:01 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.81 ms (1)
+Nov 19 22:17:01 symfony [info] {sfWebResponse} Send content (33968 o)
+Nov 19 22:17:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:17:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:17:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:17:25 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:17:25 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:17:25 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:17:25 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:17:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:17:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:17:25 symfony [info] {sfWebDebugLogger} Configuration 41.43 ms (9)
+Nov 19 22:17:25 symfony [info] {sfWebDebugLogger} Factories 219.86 ms (1)
+Nov 19 22:17:25 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:17:25 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.52 ms (1)
+Nov 19 22:17:25 symfony [info] {sfWebResponse} Send content (33968 o)
+Nov 19 22:19:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:19:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:19:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:19:24 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:19:24 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:19:24 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:19:24 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:19:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:19:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:19:24 symfony [info] {sfWebDebugLogger} Configuration 46.18 ms (9)
+Nov 19 22:19:24 symfony [info] {sfWebDebugLogger} Factories 251.23 ms (1)
+Nov 19 22:19:24 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 22:19:24 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.13 ms (1)
+Nov 19 22:19:24 symfony [info] {sfWebResponse} Send content (34041 o)
+Nov 19 22:20:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:20:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:20:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:20:20 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:20:20 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:20:20 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:20:20 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:20:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:20:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:20:20 symfony [info] {sfWebDebugLogger} Configuration 40.03 ms (9)
+Nov 19 22:20:20 symfony [info] {sfWebDebugLogger} Factories 240.63 ms (1)
+Nov 19 22:20:20 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:20:20 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.87 ms (1)
+Nov 19 22:20:20 symfony [info] {sfWebResponse} Send content (34075 o)
+Nov 19 22:21:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:21:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:21:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:21:06 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:21:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:21:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:21:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:21:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:21:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:21:06 symfony [info] {sfWebDebugLogger} Configuration 40.98 ms (9)
+Nov 19 22:21:06 symfony [info] {sfWebDebugLogger} Factories 224.26 ms (1)
+Nov 19 22:21:06 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:21:06 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.91 ms (1)
+Nov 19 22:21:06 symfony [info] {sfWebResponse} Send content (34075 o)
+Nov 19 22:22:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:22:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:22:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:22:06 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:22:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:22:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:22:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:22:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:22:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:22:06 symfony [info] {sfWebDebugLogger} Configuration 44.37 ms (9)
+Nov 19 22:22:06 symfony [info] {sfWebDebugLogger} Factories 223.21 ms (1)
+Nov 19 22:22:06 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 22:22:06 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.42 ms (1)
+Nov 19 22:22:06 symfony [info] {sfWebResponse} Send content (34075 o)
+Nov 19 22:23:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:23:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:23:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:23:44 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:23:44 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:23:44 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:23:44 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:23:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:23:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:23:44 symfony [info] {sfWebDebugLogger} Configuration 47.12 ms (9)
+Nov 19 22:23:44 symfony [info] {sfWebDebugLogger} Factories 263.91 ms (1)
+Nov 19 22:23:44 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:23:44 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.98 ms (1)
+Nov 19 22:23:44 symfony [info] {sfWebResponse} Send content (34075 o)
+Nov 19 22:24:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:24:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:24:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:24:46 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:24:46 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:24:46 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:24:46 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:24:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:24:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:24:46 symfony [info] {sfWebDebugLogger} Configuration 44.97 ms (9)
+Nov 19 22:24:46 symfony [info] {sfWebDebugLogger} Factories 216.71 ms (1)
+Nov 19 22:24:46 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:24:46 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.26 ms (1)
+Nov 19 22:24:46 symfony [info] {sfWebResponse} Send content (34075 o)
+Nov 19 22:25:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:25:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:25:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:25:34 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:25:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:25:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:25:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:25:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:25:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:25:34 symfony [info] {sfWebDebugLogger} Configuration 42.66 ms (9)
+Nov 19 22:25:34 symfony [info] {sfWebDebugLogger} Factories 235.66 ms (1)
+Nov 19 22:25:34 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.28 ms (1)
+Nov 19 22:25:34 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 130.31 ms (1)
+Nov 19 22:25:34 symfony [info] {sfWebResponse} Send content (34075 o)
+Nov 19 22:28:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:28:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:28:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:28:45 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:28:45 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:28:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:28:45 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:28:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:28:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:28:45 symfony [info] {sfWebDebugLogger} Configuration 54.56 ms (9)
+Nov 19 22:28:45 symfony [info] {sfWebDebugLogger} Factories 252.86 ms (1)
+Nov 19 22:28:45 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 22:28:45 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.13 ms (1)
+Nov 19 22:28:45 symfony [info] {sfWebResponse} Send content (34120 o)
+Nov 19 22:30:25 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:30:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:30:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:30:25 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:30:25 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:30:25 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:30:25 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:30:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:30:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:30:25 symfony [info] {sfWebDebugLogger} Configuration 44.22 ms (9)
+Nov 19 22:30:25 symfony [info] {sfWebDebugLogger} Factories 223.08 ms (1)
+Nov 19 22:30:25 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 22:30:25 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.09 ms (1)
+Nov 19 22:30:25 symfony [info] {sfWebResponse} Send content (34120 o)
+Nov 19 22:36:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:36:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:36:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:36:44 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:36:44 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:36:44 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:36:44 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:36:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:36:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:36:44 symfony [info] {sfWebDebugLogger} Configuration 44.86 ms (9)
+Nov 19 22:36:44 symfony [info] {sfWebDebugLogger} Factories 248.30 ms (1)
+Nov 19 22:36:44 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 19 22:36:44 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.72 ms (1)
+Nov 19 22:36:44 symfony [info] {sfWebResponse} Send content (34174 o)
+Nov 19 22:37:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:37:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:37:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:37:33 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:37:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:37:33 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:37:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:37:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:37:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:37:33 symfony [info] {sfWebDebugLogger} Configuration 45.38 ms (9)
+Nov 19 22:37:33 symfony [info] {sfWebDebugLogger} Factories 234.84 ms (1)
+Nov 19 22:37:33 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:37:33 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.27 ms (1)
+Nov 19 22:37:33 symfony [info] {sfWebResponse} Send content (34174 o)
+Nov 19 22:39:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:39:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:39:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:39:16 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:39:16 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:39:16 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:39:16 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:39:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:39:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:39:16 symfony [info] {sfWebDebugLogger} Configuration 46.70 ms (9)
+Nov 19 22:39:16 symfony [info] {sfWebDebugLogger} Factories 228.08 ms (1)
+Nov 19 22:39:16 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:39:16 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 105.34 ms (1)
+Nov 19 22:39:16 symfony [info] {sfWebResponse} Send content (34174 o)
+Nov 19 22:40:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:40:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:40:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:40:33 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:40:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:40:33 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:40:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:40:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:40:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:40:33 symfony [info] {sfWebDebugLogger} Configuration 40.91 ms (9)
+Nov 19 22:40:33 symfony [info] {sfWebDebugLogger} Factories 418.20 ms (1)
+Nov 19 22:40:33 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:40:33 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.57 ms (1)
+Nov 19 22:40:33 symfony [info] {sfWebResponse} Send content (34174 o)
+Nov 19 22:41:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:41:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:41:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:41:45 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:41:45 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:41:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:41:45 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:41:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:41:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:41:45 symfony [info] {sfWebDebugLogger} Configuration 45.55 ms (9)
+Nov 19 22:41:45 symfony [info] {sfWebDebugLogger} Factories 254.23 ms (1)
+Nov 19 22:41:45 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.25 ms (1)
+Nov 19 22:41:45 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.81 ms (1)
+Nov 19 22:41:45 symfony [info] {sfWebResponse} Send content (34174 o)
+Nov 19 22:47:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:47:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:47:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:47:05 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:47:05 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:47:05 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:47:05 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:47:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:47:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:47:05 symfony [info] {sfWebDebugLogger} Configuration 44.87 ms (9)
+Nov 19 22:47:05 symfony [info] {sfWebDebugLogger} Factories 238.36 ms (1)
+Nov 19 22:47:05 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:47:05 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 113.20 ms (1)
+Nov 19 22:47:05 symfony [info] {sfWebResponse} Send content (34782 o)
+Nov 19 22:48:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:48:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:48:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:48:06 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:48:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:48:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:48:06 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:48:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:48:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:48:06 symfony [info] {sfWebDebugLogger} Configuration 46.86 ms (9)
+Nov 19 22:48:06 symfony [info] {sfWebDebugLogger} Factories 237.87 ms (1)
+Nov 19 22:48:06 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:48:06 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.93 ms (1)
+Nov 19 22:48:06 symfony [info] {sfWebResponse} Send content (34836 o)
+Nov 19 22:48:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:48:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:48:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:48:24 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:48:24 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:48:24 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:48:24 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:48:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:48:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:48:24 symfony [info] {sfWebDebugLogger} Configuration 42.00 ms (9)
+Nov 19 22:48:24 symfony [info] {sfWebDebugLogger} Factories 231.66 ms (1)
+Nov 19 22:48:24 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:48:24 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.14 ms (1)
+Nov 19 22:48:24 symfony [info] {sfWebResponse} Send content (34843 o)
+Nov 19 22:50:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:50:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:50:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:50:31 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:50:32 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:50:32 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:50:32 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:50:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:50:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:50:32 symfony [info] {sfWebDebugLogger} Configuration 43.37 ms (9)
+Nov 19 22:50:32 symfony [info] {sfWebDebugLogger} Factories 228.74 ms (1)
+Nov 19 22:50:32 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 22:50:32 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.40 ms (1)
+Nov 19 22:50:32 symfony [info] {sfWebResponse} Send content (34667 o)
+Nov 19 22:51:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:51:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:51:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:51:47 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:51:47 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:51:47 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:51:47 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:51:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:51:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:51:47 symfony [info] {sfWebDebugLogger} Configuration 44.08 ms (9)
+Nov 19 22:51:47 symfony [info] {sfWebDebugLogger} Factories 235.08 ms (1)
+Nov 19 22:51:47 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:51:47 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 114.37 ms (1)
+Nov 19 22:51:47 symfony [info] {sfWebResponse} Send content (34666 o)
+Nov 19 22:52:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:52:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:52:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:52:11 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:52:11 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:52:11 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:52:11 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:52:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:52:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:52:11 symfony [info] {sfWebDebugLogger} Configuration 41.87 ms (9)
+Nov 19 22:52:11 symfony [info] {sfWebDebugLogger} Factories 237.08 ms (1)
+Nov 19 22:52:11 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:52:11 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.02 ms (1)
+Nov 19 22:52:11 symfony [info] {sfWebResponse} Send content (34666 o)
+Nov 19 22:52:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:52:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:52:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:52:30 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:52:30 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:52:30 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:52:30 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:52:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:52:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:52:30 symfony [info] {sfWebDebugLogger} Configuration 43.35 ms (9)
+Nov 19 22:52:30 symfony [info] {sfWebDebugLogger} Factories 265.33 ms (1)
+Nov 19 22:52:30 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:52:30 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.99 ms (1)
+Nov 19 22:52:30 symfony [info] {sfWebResponse} Send content (34667 o)
+Nov 19 22:53:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:53:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:53:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:53:08 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:53:08 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:53:08 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:53:08 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:53:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:53:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:53:08 symfony [info] {sfWebDebugLogger} Configuration 47.37 ms (9)
+Nov 19 22:53:08 symfony [info] {sfWebDebugLogger} Factories 270.71 ms (1)
+Nov 19 22:53:08 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.34 ms (1)
+Nov 19 22:53:08 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.02 ms (1)
+Nov 19 22:53:08 symfony [info] {sfWebResponse} Send content (34665 o)
+Nov 19 22:53:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:53:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:53:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:53:34 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:53:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:53:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:53:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:53:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:53:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:53:34 symfony [info] {sfWebDebugLogger} Configuration 43.02 ms (9)
+Nov 19 22:53:34 symfony [info] {sfWebDebugLogger} Factories 215.75 ms (1)
+Nov 19 22:53:34 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 22:53:34 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 111.99 ms (1)
+Nov 19 22:53:34 symfony [info] {sfWebResponse} Send content (34665 o)
+Nov 19 22:54:12 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:54:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:54:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:54:13 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:54:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:54:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:54:13 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:54:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:54:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:54:13 symfony [info] {sfWebDebugLogger} Configuration 44.25 ms (9)
+Nov 19 22:54:13 symfony [info] {sfWebDebugLogger} Factories 241.51 ms (1)
+Nov 19 22:54:13 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:54:13 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.45 ms (1)
+Nov 19 22:54:13 symfony [info] {sfWebResponse} Send content (34665 o)
+Nov 19 22:54:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:54:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:54:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:54:33 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:54:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:54:33 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:54:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:54:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:54:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:54:33 symfony [info] {sfWebDebugLogger} Configuration 44.00 ms (9)
+Nov 19 22:54:33 symfony [info] {sfWebDebugLogger} Factories 234.00 ms (1)
+Nov 19 22:54:33 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:54:33 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 105.47 ms (1)
+Nov 19 22:54:33 symfony [info] {sfWebResponse} Send content (34665 o)
+Nov 19 22:55:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:55:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:55:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:55:45 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:55:45 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:55:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:55:45 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:55:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:55:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:55:45 symfony [info] {sfWebDebugLogger} Configuration 45.56 ms (9)
+Nov 19 22:55:45 symfony [info] {sfWebDebugLogger} Factories 226.77 ms (1)
+Nov 19 22:55:45 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 22:55:45 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.71 ms (1)
+Nov 19 22:55:45 symfony [info] {sfWebResponse} Send content (34788 o)
+Nov 19 22:56:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:56:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:56:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:56:23 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:56:23 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:56:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:56:23 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:56:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:56:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:56:23 symfony [info] {sfWebDebugLogger} Configuration 48.54 ms (9)
+Nov 19 22:56:23 symfony [info] {sfWebDebugLogger} Factories 265.91 ms (1)
+Nov 19 22:56:23 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 22:56:23 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 110.21 ms (1)
+Nov 19 22:56:23 symfony [info] {sfWebResponse} Send content (34817 o)
+Nov 19 22:57:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:57:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:57:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:57:18 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:57:18 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:57:18 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:57:18 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:57:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:57:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:57:18 symfony [info] {sfWebDebugLogger} Configuration 45.90 ms (9)
+Nov 19 22:57:18 symfony [info] {sfWebDebugLogger} Factories 247.32 ms (1)
+Nov 19 22:57:18 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:57:18 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 107.05 ms (1)
+Nov 19 22:57:18 symfony [info] {sfWebResponse} Send content (34817 o)
+Nov 19 22:58:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:58:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:58:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:58:01 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:58:01 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:58:02 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:58:02 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:58:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:58:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:58:02 symfony [info] {sfWebDebugLogger} Configuration 46.69 ms (9)
+Nov 19 22:58:02 symfony [info] {sfWebDebugLogger} Factories 230.61 ms (1)
+Nov 19 22:58:02 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.29 ms (1)
+Nov 19 22:58:02 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.54 ms (1)
+Nov 19 22:58:02 symfony [info] {sfWebResponse} Send content (34831 o)
+Nov 19 22:58:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:58:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:58:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:58:50 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:58:50 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:58:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:58:50 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:58:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:58:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:58:50 symfony [info] {sfWebDebugLogger} Configuration 40.42 ms (9)
+Nov 19 22:58:50 symfony [info] {sfWebDebugLogger} Factories 221.22 ms (1)
+Nov 19 22:58:50 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 22:58:50 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 118.36 ms (1)
+Nov 19 22:58:50 symfony [info] {sfWebResponse} Send content (34838 o)
+Nov 19 22:59:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 22:59:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 22:59:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 22:59:21 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 22:59:21 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 22:59:21 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:59:21 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 22:59:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 22:59:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 22:59:21 symfony [info] {sfWebDebugLogger} Configuration 40.27 ms (9)
+Nov 19 22:59:21 symfony [info] {sfWebDebugLogger} Factories 226.90 ms (1)
+Nov 19 22:59:21 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 19 22:59:21 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 112.22 ms (1)
+Nov 19 22:59:21 symfony [info] {sfWebResponse} Send content (34845 o)
+Nov 19 23:05:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:05:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:05:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:05:09 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:05:09 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:05:09 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:05:09 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:05:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:05:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:05:09 symfony [info] {sfWebDebugLogger} Configuration 44.40 ms (9)
+Nov 19 23:05:09 symfony [info] {sfWebDebugLogger} Factories 253.40 ms (1)
+Nov 19 23:05:09 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 23:05:09 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.99 ms (1)
+Nov 19 23:05:09 symfony [info] {sfWebResponse} Send content (34678 o)
+Nov 19 23:09:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:09:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:09:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:09:40 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:09:40 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:09:41 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:09:41 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:09:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:09:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:09:41 symfony [info] {sfWebDebugLogger} Configuration 52.98 ms (9)
+Nov 19 23:09:41 symfony [info] {sfWebDebugLogger} Factories 272.89 ms (1)
+Nov 19 23:09:41 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 23:09:41 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 101.86 ms (1)
+Nov 19 23:09:41 symfony [info] {sfWebResponse} Send content (34824 o)
+Nov 19 23:10:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:10:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:10:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:10:10 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:10:10 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:10:10 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:10:10 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:10:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:10:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:10:10 symfony [info] {sfWebDebugLogger} Configuration 41.77 ms (9)
+Nov 19 23:10:10 symfony [info] {sfWebDebugLogger} Factories 218.82 ms (1)
+Nov 19 23:10:10 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 23:10:10 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 101.08 ms (1)
+Nov 19 23:10:10 symfony [info] {sfWebResponse} Send content (34824 o)
+Nov 19 23:10:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:10:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:10:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:10:23 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:10:23 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:10:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:10:23 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:10:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:10:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:10:23 symfony [info] {sfWebDebugLogger} Configuration 47.95 ms (9)
+Nov 19 23:10:23 symfony [info] {sfWebDebugLogger} Factories 236.34 ms (1)
+Nov 19 23:10:23 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.26 ms (1)
+Nov 19 23:10:23 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.18 ms (1)
+Nov 19 23:10:23 symfony [info] {sfWebResponse} Send content (34824 o)
+Nov 19 23:12:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:12:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:12:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:12:32 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:12:32 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:12:32 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:12:32 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:12:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:12:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:12:32 symfony [info] {sfWebDebugLogger} Configuration 46.45 ms (9)
+Nov 19 23:12:32 symfony [info] {sfWebDebugLogger} Factories 291.82 ms (1)
+Nov 19 23:12:32 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 19 23:12:32 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.73 ms (1)
+Nov 19 23:12:32 symfony [info] {sfWebResponse} Send content (34871 o)
+Nov 19 23:12:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:12:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:12:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:12:52 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:12:52 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:12:52 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:12:52 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:12:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:12:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:12:52 symfony [info] {sfWebDebugLogger} Configuration 39.26 ms (9)
+Nov 19 23:12:52 symfony [info] {sfWebDebugLogger} Factories 210.56 ms (1)
+Nov 19 23:12:52 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.29 ms (1)
+Nov 19 23:12:52 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.96 ms (1)
+Nov 19 23:12:52 symfony [info] {sfWebResponse} Send content (34878 o)
+Nov 19 23:13:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 19 23:13:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 19 23:13:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 19 23:13:40 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 19 23:13:40 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 19 23:13:40 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:13:40 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 19 23:13:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 19 23:13:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 19 23:13:40 symfony [info] {sfWebDebugLogger} Configuration 46.76 ms (9)
+Nov 19 23:13:40 symfony [info] {sfWebDebugLogger} Factories 215.21 ms (1)
+Nov 19 23:13:40 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 19 23:13:40 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 131.10 ms (1)
+Nov 19 23:13:40 symfony [info] {sfWebResponse} Send content (34893 o)
+Nov 20 00:20:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:20:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:20:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:20:21 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:20:21 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:20:21 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:20:21 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:20:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:20:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:20:21 symfony [info] {sfWebDebugLogger} Configuration 45.21 ms (9)
+Nov 20 00:20:21 symfony [info] {sfWebDebugLogger} Factories 339.32 ms (1)
+Nov 20 00:20:21 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.20 ms (1)
+Nov 20 00:20:21 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 118.15 ms (1)
+Nov 20 00:20:22 symfony [info] {sfWebResponse} Send content (34455 o)
+Nov 20 00:20:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:20:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:20:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:20:39 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:20:39 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:20:39 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:20:40 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:20:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:20:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:20:40 symfony [info] {sfWebDebugLogger} Configuration 46.56 ms (9)
+Nov 20 00:20:40 symfony [info] {sfWebDebugLogger} Factories 221.50 ms (1)
+Nov 20 00:20:40 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.21 ms (1)
+Nov 20 00:20:40 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 115.74 ms (1)
+Nov 20 00:20:40 symfony [info] {sfWebResponse} Send content (34790 o)
+Nov 20 00:21:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:21:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:21:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:21:54 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:21:55 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:21:55 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:21:55 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:21:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:21:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:21:55 symfony [info] {sfWebDebugLogger} Configuration 45.10 ms (9)
+Nov 20 00:21:55 symfony [info] {sfWebDebugLogger} Factories 224.79 ms (1)
+Nov 20 00:21:55 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.22 ms (1)
+Nov 20 00:21:55 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 112.56 ms (1)
+Nov 20 00:21:55 symfony [info] {sfWebResponse} Send content (34790 o)
+Nov 20 00:22:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:23:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:23:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:23:00 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:23:00 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:23:00 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:23:00 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:23:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:23:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:23:00 symfony [info] {sfWebDebugLogger} Configuration 48.82 ms (9)
+Nov 20 00:23:00 symfony [info] {sfWebDebugLogger} Factories 217.11 ms (1)
+Nov 20 00:23:00 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 20 00:23:00 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 108.13 ms (1)
+Nov 20 00:23:00 symfony [info] {sfWebResponse} Send content (34769 o)
+Nov 20 00:23:09 symfony [info] {sfPatternRouting} Match route "authentication" (/A/1qM) for /A/1qM with parameters array (  'module' => 'viewer',  'action' => 'authentication',)
+Nov 20 00:23:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:23:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:23:10 symfony [info] {viewerActions} Call "viewerActions->executeAuthentication()"
+Nov 20 00:28:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:28:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:28:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:28:02 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:28:02 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:28:02 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:28:02 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:28:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:28:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:28:02 symfony [info] {sfWebDebugLogger} Configuration 47.54 ms (9)
+Nov 20 00:28:02 symfony [info] {sfWebDebugLogger} Factories 279.58 ms (1)
+Nov 20 00:28:02 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 20 00:28:02 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 118.40 ms (1)
+Nov 20 00:28:02 symfony [info] {sfWebResponse} Send content (34737 o)
+Nov 20 00:38:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:38:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:38:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:38:22 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:38:22 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:38:22 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:38:22 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:38:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:38:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:38:22 symfony [info] {sfWebDebugLogger} Configuration 154.90 ms (10)
+Nov 20 00:38:22 symfony [info] {sfWebDebugLogger} Factories 329.77 ms (1)
+Nov 20 00:38:22 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 20 00:38:22 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 242.13 ms (1)
+Nov 20 00:38:22 symfony [info] {sfWebResponse} Send content (34810 o)
+Nov 20 00:39:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:39:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:39:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:39:27 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:39:28 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:39:28 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:39:28 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:39:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:39:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:39:28 symfony [info] {sfWebDebugLogger} Configuration 140.94 ms (10)
+Nov 20 00:39:28 symfony [info] {sfWebDebugLogger} Factories 228.54 ms (1)
+Nov 20 00:39:28 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 20 00:39:28 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 216.87 ms (1)
+Nov 20 00:39:28 symfony [info] {sfWebResponse} Send content (34858 o)
+Nov 20 00:41:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:41:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:41:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:41:33 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:41:33 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:41:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:41:34 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:41:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:41:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:41:34 symfony [info] {sfWebDebugLogger} Configuration 43.59 ms (9)
+Nov 20 00:41:34 symfony [info] {sfWebDebugLogger} Factories 255.68 ms (1)
+Nov 20 00:41:34 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 20 00:41:34 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 109.88 ms (1)
+Nov 20 00:41:34 symfony [info] {sfWebResponse} Send content (34892 o)
+Nov 20 00:41:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:41:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:41:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:41:38 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:41:38 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:41:38 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:41:38 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:41:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:41:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:41:38 symfony [info] {sfWebDebugLogger} Configuration 39.63 ms (9)
+Nov 20 00:41:38 symfony [info] {sfWebDebugLogger} Factories 103.46 ms (1)
+Nov 20 00:41:38 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.19 ms (1)
+Nov 20 00:41:38 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 50.24 ms (1)
+Nov 20 00:41:38 symfony [info] {sfWebResponse} Send content (34915 o)
+Nov 20 00:58:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 00:58:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 00:58:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 00:58:24 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 00:58:24 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 00:58:24 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:58:24 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 00:58:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 00:58:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 00:58:24 symfony [info] {sfWebDebugLogger} Configuration 76.89 ms (9)
+Nov 20 00:58:24 symfony [info] {sfWebDebugLogger} Factories 563.94 ms (1)
+Nov 20 00:58:24 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.32 ms (1)
+Nov 20 00:58:24 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 225.79 ms (1)
+Nov 20 00:58:24 symfony [info] {sfWebResponse} Send content (34916 o)
+Nov 20 01:01:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
+Nov 20 01:01:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 20 01:01:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 20 01:01:28 symfony [info] {viewerActions} Call "viewerActions->executeIndex()"
+Nov 20 01:01:28 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\modules/viewer/templates/indexSuccess.php"
+Nov 20 01:01:29 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 01:01:29 symfony [info] {sfPHPView} Render "C:\wamp\www\scheduler\apps\frontend\templates/layout.php"
+Nov 20 01:01:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 20 01:01:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=ISO-8859-1"
+Nov 20 01:01:29 symfony [info] {sfWebDebugLogger} Configuration 149.00 ms (9)
+Nov 20 01:01:29 symfony [info] {sfWebDebugLogger} Factories 605.42 ms (1)
+Nov 20 01:01:29 symfony [info] {sfWebDebugLogger} Action "viewer/index" 0.65 ms (1)
+Nov 20 01:01:29 symfony [info] {sfWebDebugLogger} View "Success" for "viewer/index" 247.46 ms (1)
+Nov 20 01:01:29 symfony [info] {sfWebResponse} Send content (34902 o)

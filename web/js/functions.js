@@ -1,10 +1,10 @@
-function loadSchedule() {
+function loadSchedule(url) {
 
-    var url = "A/1qM";
+    //var url = url;
     var ctrl;
     var user = $('user').getValue();
     var password = $('password').getValue();
-
+    
 
     if(user == '') {
         $('user').focus();
@@ -22,7 +22,7 @@ function loadSchedule() {
     }
     else {
         
-        Grid.restoreAll();
+       Grid.restoreAll();
 
         $('sharethis').hide();
         $('sharethis').update();

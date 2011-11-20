@@ -6,12 +6,12 @@ default:
     content-type: text/html
 
   metas:
-    title:        Scheduler
-    description:  Mediante el Schedule Viewer los estudiantes de ESPOL pueden ver sus horarios y descargarlo en formato PDF al ingresar su n&uacute;mero de matr&iacute;cula.
+    title:        Scheduler ESPOL, TAWS
+    description:  Mediante el Schedule Viewer los estudiantes de ESPOL pueden ver sus horarios y descargarlo en formato PDF al ingresar al sistema.
     keywords:     ESPOL, FIEC, horarios espol, horarios, TAWS, Scheduler Viewer, Planificador de Horarios
     language:     es
-    copyright:     2008 TAWS
-    author:        TAWS, Denisse Cayetano, Marco Calder&oacute;n, Allan Avenda&ntilde;o
+    copyright:     2011 TAWS
+    author:        TAWS, Denisse Cayetano, Marco Calder&oacute;n, Allan Avenda&ntilde;o, Alejandro Vinueza
     #robots:       index, follow
 
   stylesheets:    [style.css,social-icons.css,tabs.css,scheduler/scheduler.css,scheduler/widget.css,version3.css]

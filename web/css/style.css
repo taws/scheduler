@@ -34,9 +34,70 @@ body {
 	margin: 0px auto;
 	position: relative;
 }
+a{
+    text-decoration: none;
+}
+#menu{
+    height: 31px;
+/*    background-color: #3B5998;*/
+    min-width: 981px;
+    width: 100%;
+    z-index: 300;
+    background-color: #2A2D30;
+    font-weight: bold;
+    line-height: 29px;
+}
 
+#menu-holder{
+    float: right;
+    
+    padding-right: 262px;
+    
+}
+.userphoto{
+/*    border: solid 1px #294A8F;
+    border-top: solid 1px #123682;*/
+    
+    height: 23px;
+    margin: 3px 0px 3px 3px;
+    padding-right: 5px;
+    padding-top: 1px;
+    width: 23px;
+}
+.inline{
+    
+    float: left;   
+}
+.hvr:hover{
+   background-color: #4C4C4C;
+    background-image: none;
+    background-position: 0 -102px;
+    background-repeat: repeat-x;
+    outline: medium none;
+    text-decoration: none !important;
+}
+ul, li{
+    list-style-type: none;
+}
+.inline-padding{
+    color:#D8DFEA;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.name-padding{
+    color:#D8DFEA;
+    padding-right: 0px;
+    font-size: 12px;
+}
+.pulldown{
+    background-image: url(http://static.ak.fbcdn.net/rsrc.php/v1/yD/r/pq_lCqSxJXw.png);
+    background-repeat: no-repeat;
+    background-position: -56px -315px;
+    height: 31px;
+    width: 24px;
+}
 #header{
-	height: 100px;
+	height: 111px;
 	position: relative;
 	z-index: 10;
         background: url(../img/tabs-divider.png) no-repeat scroll center bottom #2A2D30;
@@ -46,6 +107,7 @@ body {
 
 #main{
 	width: 100%;
+        
 }
 
 #content{
@@ -58,7 +120,7 @@ body {
 
 #logo{
 	position: absolute;
-	top: -10px;
+/*	top: -10px;*/
 	left: 30px;
 }
 
@@ -112,7 +174,7 @@ body {
 
 /* MENU ------------------------------------------------------------*/
 
-#menu{
+/*#menu{
 	width: 100%;
 	padding-top: 1px;
 	margin-bottom: 0px;
@@ -120,13 +182,13 @@ body {
 	background: -webkit-gradient(linear, left top, right bottom, from(#f858ef), to(#ffe413)); 
 	background: -moz-linear-gradient(left,  #f858ef,  #ffe413);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f858ef', endColorstr='#ffe413', GradientType=1);
-}
+}*/
 
-#menu-holder{
+/*#menu-holder{
 	width: 100%;
 	height: 79px;
 	background:  url(../img/menu-bg.png) repeat-x;
-}
+}*/
 
 /* NAVIGATION --------------------------------------------------------*/
 

@@ -1,0 +1,40 @@
+Usuario:
+  columns:
+    id: { type: integer(4), autoincrement: true, primary: true, notnull:  true, unique: true }
+    identificacion: { type: string(255), notnull:  true, unique: true }
+    matricula: { type: string(255) }
+    nombre_usuario: { type: string(255) }
+    contrasenia: { type: string(50) }
+    nombres: { type: string(255) }
+    apellidos: { type: string(255) }
+    correo: { type: string(255), notnull:  true }
+    correo_alternativo: { type: string(255) }
+    telefono: { type: string(255) }
+    celular: { type: string(255) }
+    direccion: { type: string(255) }
+    pagina_web: { type: string(255) }
+    foto: { type: blob, notnull:false }    
+    cumpleanio: { type: date, notnull: false }
+    twitter: { type: string(255) }
+    genero: { type: string(5) }
+    admin: { type: boolean, default: 0 }
+    espol: { type: boolean, default: 0 }
+    activo: { type: boolean, default: 0 }   
+    eliminado: { type: boolean, default: 0 }
+    
+Compartir:
+  columns:
+    comparte_id: { type: integer (4), notnull: true} 
+    compartido_id: { type: integer (4), notnull: true} 
+    activo: { type: boolean, default: 1 }
+  relations:
+    Usuario: { local: comparte_id, foreign: id, foreignAlias: UsuarioComparte }
+    Usuario: { local: compartido_id, foreign: id, foreignAlias: UsuarioCompartido }
+    
+Facebook:
+  columns:
+    usuario_id: { type: integer (4), notnull: true} 
+    fb_id: { type: integer (4), notnull: true} 
+    activo: { type: boolean, default: 1 }
+  relations:
+    Usuario: { local: usuario_id, foreign: id, foreignAlias: Usuario }    
