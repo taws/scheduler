@@ -1,6 +1,10 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+sharing:
+  url:  /sharing
+  param: { module: sharing, action: index }
+  
 share_fails:
   url: /share
   param: { module: viewer, action: index }
@@ -23,10 +27,11 @@ authentication:
   url: /A/1qM
   param: { module: viewer, action: authentication }
 
+scheduler:
+  url: /S/2qR
+  param: { module: viewer, action: scheduler }
 
-viewer:
-  url:  /viewer
-  param: { module: viewer, action: index }
+
 
 
 # default rules
@@ -36,9 +41,9 @@ homepage:
 
 # generic rules
 # please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
+#default_index:
+#  url:   /:module
+#  param: { action: index }
 
-default:
-  url:   /:module/:action/*
+#default:
+#  url:   /:module/:action/*

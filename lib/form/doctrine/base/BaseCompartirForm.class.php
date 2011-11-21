@@ -15,17 +15,19 @@ abstract class BaseCompartirForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'            => new sfWidgetFormInputHidden(),
-      'comparte_id'   => new sfWidgetFormInputText(),
-      'compartido_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Usuario'), 'add_empty' => false)),
+      'comparte_id'   => new sfWidgetFormInputHidden(),
+      'compartido_id' => new sfWidgetFormInputHidden(),
       'activo'        => new sfWidgetFormInputCheckbox(),
+      'created_at'    => new sfWidgetFormDateTime(),
+      'updated_at'    => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
-      'id'            => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'comparte_id'   => new sfValidatorInteger(),
-      'compartido_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Usuario'))),
+      'comparte_id'   => new sfValidatorChoice(array('choices' => array($this->getObject()->get('comparte_id')), 'empty_value' => $this->getObject()->get('comparte_id'), 'required' => false)),
+      'compartido_id' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('compartido_id')), 'empty_value' => $this->getObject()->get('compartido_id'), 'required' => false)),
       'activo'        => new sfValidatorBoolean(array('required' => false)),
+      'created_at'    => new sfValidatorDateTime(),
+      'updated_at'    => new sfValidatorDateTime(),
     ));
 
     $this->widgetSchema->setNameFormat('compartir[%s]');

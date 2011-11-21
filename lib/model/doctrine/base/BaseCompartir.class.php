@@ -8,16 +8,13 @@
  * @property integer $comparte_id
  * @property integer $compartido_id
  * @property boolean $activo
- * @property Usuario $Usuario
  * 
  * @method integer   getComparteId()    Returns the current record's "comparte_id" value
  * @method integer   getCompartidoId()  Returns the current record's "compartido_id" value
  * @method boolean   getActivo()        Returns the current record's "activo" value
- * @method Usuario   getUsuario()       Returns the current record's "Usuario" value
  * @method Compartir setComparteId()    Sets the current record's "comparte_id" value
  * @method Compartir setCompartidoId()  Sets the current record's "compartido_id" value
  * @method Compartir setActivo()        Sets the current record's "activo" value
- * @method Compartir setUsuario()       Sets the current record's "Usuario" value
  * 
  * @package    scheduler
  * @subpackage model
@@ -31,12 +28,12 @@ abstract class BaseCompartir extends sfDoctrineRecord
         $this->setTableName('compartir');
         $this->hasColumn('comparte_id', 'integer', 4, array(
              'type' => 'integer',
-             'notnull' => true,
+             'primary' => true,
              'length' => 4,
              ));
         $this->hasColumn('compartido_id', 'integer', 4, array(
              'type' => 'integer',
-             'notnull' => true,
+             'primary' => true,
              'length' => 4,
              ));
         $this->hasColumn('activo', 'boolean', null, array(
@@ -48,8 +45,7 @@ abstract class BaseCompartir extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('Usuario', array(
-             'local' => 'compartido_id',
-             'foreign' => 'id'));
+        $timestampable0 = new Doctrine_Template_Timestampable();
+        $this->actAs($timestampable0);
     }
 }

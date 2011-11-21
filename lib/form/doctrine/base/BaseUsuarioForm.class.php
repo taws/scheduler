@@ -36,6 +36,10 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       'espol'              => new sfWidgetFormInputCheckbox(),
       'activo'             => new sfWidgetFormInputCheckbox(),
       'eliminado'          => new sfWidgetFormInputCheckbox(),
+      'created_at'         => new sfWidgetFormDateTime(),
+      'updated_at'         => new sfWidgetFormDateTime(),
+      'usuario_list'       => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
+      'usuarios_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
     ));
 
     $this->setValidators(array(
@@ -60,6 +64,10 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       'espol'              => new sfValidatorBoolean(array('required' => false)),
       'activo'             => new sfValidatorBoolean(array('required' => false)),
       'eliminado'          => new sfValidatorBoolean(array('required' => false)),
+      'created_at'         => new sfValidatorDateTime(),
+      'updated_at'         => new sfValidatorDateTime(),
+      'usuario_list'       => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
+      'usuarios_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(
@@ -81,6 +89,106 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
   public function getModelName()
   {
     return 'Usuario';
+  }
+
+  public function updateDefaultsFromObject()
+  {
+    parent::updateDefaultsFromObject();
+
+    if (isset($this->widgetSchema['usuario_list']))
+    {
+      $this->setDefault('usuario_list', $this->object->Usuario->getPrimaryKeys());
+    }
+
+    if (isset($this->widgetSchema['usuarios_list']))
+    {
+      $this->setDefault('usuarios_list', $this->object->Usuarios->getPrimaryKeys());
+    }
+
+  }
+
+  protected function doSave($con = null)
+  {
+    $this->saveUsuarioList($con);
+    $this->saveUsuariosList($con);
+
+    parent::doSave($con);
+  }
+
+  public function saveUsuarioList($con = null)
+  {
+    if (!$this->isValid())
+    {
+      throw $this->getErrorSchema();
+    }
+
+    if (!isset($this->widgetSchema['usuario_list']))
+    {
+      // somebody has unset this widget
+      return;
+    }
+
+    if (null === $con)
+    {
+      $con = $this->getConnection();
+    }
+
+    $existing = $this->object->Usuario->getPrimaryKeys();
+    $values = $this->getValue('usuario_list');
+    if (!is_array($values))
+    {
+      $values = array();
+    }
+
+    $unlink = array_diff($existing, $values);
+    if (count($unlink))
+    {
+      $this->object->unlink('Usuario', array_values($unlink));
+    }
+
+    $link = array_diff($values, $existing);
+    if (count($link))
+    {
+      $this->object->link('Usuario', array_values($link));
+    }
+  }
+
+  public function saveUsuariosList($con = null)
+  {
+    if (!$this->isValid())
+    {
+      throw $this->getErrorSchema();
+    }
+
+    if (!isset($this->widgetSchema['usuarios_list']))
+    {
+      // somebody has unset this widget
+      return;
+    }
+
+    if (null === $con)
+    {
+      $con = $this->getConnection();
+    }
+
+    $existing = $this->object->Usuarios->getPrimaryKeys();
+    $values = $this->getValue('usuarios_list');
+    if (!is_array($values))
+    {
+      $values = array();
+    }
+
+    $unlink = array_diff($existing, $values);
+    if (count($unlink))
+    {
+      $this->object->unlink('Usuarios', array_values($unlink));
+    }
+
+    $link = array_diff($values, $existing);
+    if (count($link))
+    {
+      $this->object->link('Usuarios', array_values($link));
+    }
   }
 
 }

@@ -1,32 +1,17 @@
-        <script src="/js/base/wz_tooltip.js" type="text/javascript"></script>
-        <script src="/js/base/tip_balloon.js" type="text/javascript"></script>
+         
+        <?php slot('sharethis') ?><ul id="sharethis" style="float:right;"></ul><?php end_slot()?>
+
         
-        <div id="main">
-            <div class="wrapper">
-                
-                <div id="content">
-                    <ul class="tabs">
-                        <ul id="sharethis" style="float:right;"></ul>
-                        <ul id="message-error" style="text-align:center; width: auto; color: red; font-size: 15px; padding-left: 75px;"></ul>
-                    </ul>
-                    <div id="pageBody" style="margin-top: 17px; margin-left: 92px;">
-                        <div id="container-div">
-                          <script language="javascript">
-                            var mygrid = new Grid({
-                                  initHour: 7,
-                                  initMinute: 0,
-                                  endHour: 22,
-                                  endMinute: 0,
-                                  editable: false,
-                                  width: '743px',
-                                  height: '575px'
-                            });
-                          </script>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include_partial('viewer/schedule') ?>
+              
+        
+<!--        <script language="javascript">
+          window.onload = function ()
+                {
+                loadSchedule('<?php //echo url_for1('authentication') ?>','<?php //echo url_for1('link_to_share') ?>');
+
+            };
+        </script>  -->
         
         
         <?php if($shared){ ?>

@@ -1,4 +1,6 @@
 Usuario:
+  actAs:
+    Timestampable:
   columns:
     id: { type: integer(4), autoincrement: true, primary: true, notnull:  true, unique: true }
     identificacion: { type: string(255), notnull:  true, unique: true }
@@ -21,17 +23,28 @@ Usuario:
     espol: { type: boolean, default: 0 }
     activo: { type: boolean, default: 0 }   
     eliminado: { type: boolean, default: 0 }
+  relations:
+    Usuario:
+      class: Usuario
+      local: comparte_id
+      foreign: compartido_id
+      type: many
+      foreignType: many
+      foreignAlias: Usuarios
+      refClass: Compartir
     
 Compartir:
+  actAs:
+    Timestampable:
   columns:
-    comparte_id: { type: integer (4), notnull: true} 
-    compartido_id: { type: integer (4), notnull: true} 
+    comparte_id: { type: integer (4), primary: true, notnull: true} 
+    compartido_id: { type: integer (4), primary: true, notnull: true} 
     activo: { type: boolean, default: 1 }
-  relations:
-    Usuario: { local: comparte_id, foreign: id, foreignAlias: UsuarioComparte }
-    Usuario: { local: compartido_id, foreign: id, foreignAlias: UsuarioCompartido }
+  
     
 Facebook:
+  actAs:
+    Timestampable:
   columns:
     usuario_id: { type: integer (4), notnull: true} 
     fb_id: { type: integer (4), notnull: true} 

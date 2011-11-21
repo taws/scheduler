@@ -27,6 +27,7 @@
  * @property boolean $activo
  * @property boolean $eliminado
  * @property Doctrine_Collection $Usuario
+ * @property Doctrine_Collection $Usuarios
  * 
  * @method integer             getId()                 Returns the current record's "id" value
  * @method string              getIdentificacion()     Returns the current record's "identificacion" value
@@ -49,8 +50,8 @@
  * @method boolean             getEspol()              Returns the current record's "espol" value
  * @method boolean             getActivo()             Returns the current record's "activo" value
  * @method boolean             getEliminado()          Returns the current record's "eliminado" value
- * @method Doctrine_Collection getUsuarioCompartido()  Returns the current record's "UsuarioCompartido" collection
  * @method Doctrine_Collection getUsuario()            Returns the current record's "Usuario" collection
+ * @method Doctrine_Collection getUsuarios()           Returns the current record's "Usuarios" collection
  * @method Usuario             setId()                 Sets the current record's "id" value
  * @method Usuario             setIdentificacion()     Sets the current record's "identificacion" value
  * @method Usuario             setMatricula()          Sets the current record's "matricula" value
@@ -72,56 +73,8 @@
  * @method Usuario             setEspol()              Sets the current record's "espol" value
  * @method Usuario             setActivo()             Sets the current record's "activo" value
  * @method Usuario             setEliminado()          Sets the current record's "eliminado" value
- * @method Usuario             setUsuarioCompartido()  Sets the current record's "UsuarioCompartido" collection
- * @method Usuario             setUsuario()            Sets the current record's "Usuario" collectionCompartido
- * @property Doctrine_Collection $Usuario
- * 
- * @method integer             getId()                 Returns the current record's "id" value
- * @method string              getIdentificacion()     Returns the current record's "identificacion" value
- * @method string              getMatricula()          Returns the current record's "matricula" value
- * @method string              getNombreUsuario()      Returns the current record's "nombre_usuario" value
- * @method string              getContrasenia()        Returns the current record's "contrasenia" value
- * @method string              getNombres()            Returns the current record's "nombres" value
- * @method string              getApellidos()          Returns the current record's "apellidos" value
- * @method string              getCorreo()             Returns the current record's "correo" value
- * @method string              getCorreoAlternativo()  Returns the current record's "correo_alternativo" value
- * @method string              getTelefono()           Returns the current record's "telefono" value
- * @method string              getCelular()            Returns the current record's "celular" value
- * @method string              getDireccion()          Returns the current record's "direccion" value
- * @method string              getPaginaWeb()          Returns the current record's "pagina_web" value
- * @method blob                getFoto()               Returns the current record's "foto" value
- * @method date                getCumpleanio()         Returns the current record's "cumpleanio" value
- * @method string              getTwitter()            Returns the current record's "twitter" value
- * @method string              getGenero()             Returns the current record's "genero" value
- * @method boolean             getAdmin()              Returns the current record's "admin" value
- * @method boolean             getEspol()              Returns the current record's "espol" value
- * @method boolean             getActivo()             Returns the current record's "activo" value
- * @method boolean             getEliminado()          Returns the current record's "eliminado" value
- * @method Doctrine_Collection getUsuarioCompartido()  Returns the current record's "UsuarioCompartido" collection
- * @method Doctrine_Collection getUsuario()            Returns the current record's "Usuario" collection
- * @method Usuario             setId()                 Sets the current record's "id" value
- * @method Usuario             setIdentificacion()     Sets the current record's "identificacion" value
- * @method Usuario             setMatricula()          Sets the current record's "matricula" value
- * @method Usuario             setNombreUsuario()      Sets the current record's "nombre_usuario" value
- * @method Usuario             setContrasenia()        Sets the current record's "contrasenia" value
- * @method Usuario             setNombres()            Sets the current record's "nombres" value
- * @method Usuario             setApellidos()          Sets the current record's "apellidos" value
- * @method Usuario             setCorreo()             Sets the current record's "correo" value
- * @method Usuario             setCorreoAlternativo()  Sets the current record's "correo_alternativo" value
- * @method Usuario             setTelefono()           Sets the current record's "telefono" value
- * @method Usuario             setCelular()            Sets the current record's "celular" value
- * @method Usuario             setDireccion()          Sets the current record's "direccion" value
- * @method Usuario             setPaginaWeb()          Sets the current record's "pagina_web" value
- * @method Usuario             setFoto()               Sets the current record's "foto" value
- * @method Usuario             setCumpleanio()         Sets the current record's "cumpleanio" value
- * @method Usuario             setTwitter()            Sets the current record's "twitter" value
- * @method Usuario             setGenero()             Sets the current record's "genero" value
- * @method Usuario             setAdmin()              Sets the current record's "admin" value
- * @method Usuario             setEspol()              Sets the current record's "espol" value
- * @method Usuario             setActivo()             Sets the current record's "activo" value
- * @method Usuario             setEliminado()          Sets the current record's "eliminado" value
- * @method Usuario             setUsuarioCompartido()  Sets the current record's "UsuarioCompartido" collection
  * @method Usuario             setUsuario()            Sets the current record's "Usuario" collection
+ * @method Usuario             setUsuarios()           Sets the current record's "Usuarios" collection
  * 
  * @package    scheduler
  * @subpackage model
@@ -228,12 +181,17 @@ abstract class BaseUsuario extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('Compartir as UsuarioCompartido', array(
-             'local' => 'id',
+        $this->hasMany('Usuario', array(
+             'refClass' => 'Compartir',
+             'local' => 'comparte_id',
              'foreign' => 'compartido_id'));
 
-        $this->hasMany('Facebook as Usuario', array(
-             'local' => 'id',
-             'foreign' => 'usuario_id'));
+        $this->hasMany('Usuario as Usuarios', array(
+             'refClass' => 'Compartir',
+             'local' => 'compartido_id',
+             'foreign' => 'comparte_id'));
+
+        $timestampable0 = new Doctrine_Template_Timestampable();
+        $this->actAs($timestampable0);
     }
 }

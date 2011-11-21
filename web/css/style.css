@@ -68,6 +68,9 @@ a{
     
     float: left;   
 }
+.border-top-menu{
+    border-top: 2px solid #DD4B39;
+}
 .hvr:hover{
    background-color: #4C4C4C;
     background-image: none;
@@ -75,13 +78,16 @@ a{
     background-repeat: repeat-x;
     outline: medium none;
     text-decoration: none !important;
+    
 }
+
 ul, li{
     list-style-type: none;
 }
 .inline-padding{
     color:#D8DFEA;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 12px;
 }
 .name-padding{
@@ -103,7 +109,33 @@ ul, li{
         background: url(../img/tabs-divider.png) no-repeat scroll center bottom #2A2D30;
 	/*background: #2a2d30 url(../img/header-glow.png) top center no-repeat;*/
 }
-
+#leftbar{
+    margin-top: 46px;
+    float: left;
+    width: 20%;
+    padding-right: 8px;
+    border-right: 1px solid #CCCCCC;
+}
+.list-ppl{
+    padding-bottom: 5px;
+    
+    height: 30px;
+}
+.ppl-name{
+    padding-top: 8px;
+    color: #333;
+    font-size: 12px;
+    float: left;
+    
+}
+.pplpic{
+    float: left;    
+}
+.loader{
+    float: right;
+    padding-top: 11px;
+    padding-right: 8px;
+}
 
 #main{
 	width: 100%;

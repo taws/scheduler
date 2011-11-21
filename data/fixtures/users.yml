@@ -1,0 +1,122 @@
+Usuario:
+  usuario1:
+    id: 1
+    identificacion: '1925803272'
+    matricula: '200505378'
+    nombre_usuario: 'gcali'
+    contrasenia: 'g'
+    nombres: 'Gustavo Irving'
+    apellidos: 'Cali Mena'
+    correo: 'gcali@espol.edu.ec'
+    activo: true
+    genero: M
+  usuario2:
+    id: 2
+    identificacion: '0925813273'
+    matricula: '200600088'
+    nombre_usuario: 'juagarod'
+    contrasenia: 'j'
+    nombres: 'Juan Gabriel'
+    apellidos: 'Rodriguez Fernandez'
+    correo: 'juagarod@espol.edu.ec'
+    activo: true
+    genero: M
+  usuario3:
+    id: 3
+    identificacion: '0919275446'
+    matricula: '200626851'
+    nombre_usuario: 'felmriva'
+    contrasenia: 'f'
+    nombres: 'Felix Marcial'
+    apellidos: 'Rivas Tomala'
+    correo: 'frivasto@gmail.com'
+    activo: true
+    genero: M
+  usuario4:
+    id: 4
+    identificacion: '0919279447'
+    matricula: '200837318'
+    nombre_usuario: 'alevinue'
+    contrasenia: 'a'
+    nombres: 'Alejandro David'
+    apellidos: 'Vinueza Proano'
+    correo: 'alejandrovinuezap@gmail.com'
+    activo: true
+    genero: M
+  usuario5:
+    id: 5
+    identificacion: '0927131358'
+    matricula: '200703080'
+    nombre_usuario: 'jvpincay'
+    contrasenia: 'j'
+    nombres: 'Jhonny Vladimir'
+    apellidos: 'Pincay Nieves'
+    correo: 'jvpincay@espol.edu.ec'
+    activo: true
+    genero: M
+  usuario6:
+    id: 6
+    identificacion: '092521458'
+    matricula: '200407757'
+    nombre_usuario: 'leespin'
+    contrasenia: 'l'
+    nombres: 'Lisette Elizabeth'
+    apellidos: 'Espin Noboa'
+    correo: 'leespin@espol.edu.ec'
+    activo: true
+    genero: F
+  usuario7:
+    id: 7
+    identificacion: '0926155245'
+    matricula: '200015681'
+    nombre_usuario: 'xaoch'
+    contrasenia: 'x'
+    nombres: 'Xavier Antonio'
+    apellidos: 'Ochoa Chehab'
+    correo: 'sidweb@cti.espol.edu.ec'
+    activo: true
+    genero: M
+  usuario8:
+    id: 8
+    identificacion: '0915803273'
+    matricula: '200505373'
+    nombre_usuario: 'kchilui'
+    contrasenia: 'k'
+    nombres: 'Katherine Malena'
+    apellidos: 'Chiluiza García'
+    correo: 'sidweb@cti.espol.edu.ec'
+    activo: true
+    genero: F
+  usuario9:
+    id: 9
+    identificacion: '0925803263'
+    matricula: '200505373'
+    nombre_usuario: 'epelaez'
+    contrasenia: 'e'
+    nombres: 'Colon Enrique'
+    apellidos: 'Pelaez, PhD.'
+    correo: 'sidweb@cti.espol.edu.ec'
+    activo: true
+    genero: M
+  usuario10:
+    id: 10
+    identificacion: '0925803265'
+    matricula: '200306611'
+    nombre_usuario: 'aavendan'
+    contrasenia: 'a'
+    nombres: 'Allan Roberto'
+    apellidos: 'Avendano Sudario'
+    correo: 'aavendan@espol.edu.ec'
+    activo: true
+    genero: M
+  usuario11:
+    id: 11
+    identificacion: ''
+    matricula: ''
+    nombre_usuario: 'sidwebadmin'
+    contrasenia: 'h8bmbfar'
+    nombres: 'SIDWeb'
+    apellidos: 'Admin'
+    correo: 'sidweb@cti.espol.edu.ec'
+    admin: true
+    activo: true

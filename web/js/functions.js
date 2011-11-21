@@ -57,7 +57,7 @@ function loadSchedule(url,link_to_share) {
             },
             onLoading: function() {
                 ctrl = getBusyOverlay($('main'),
-                            {color:'black', opacity:0.5, text:'cargando...', style:'font-weight:bold;font-size:14px;color:white'},
+                            {color:'black', opacity:0.5, text:'Cargando...', style:'font-weight:bold;font-size:14px;color:white'},
                             {color:'#fff', size:128, type:'o'});
             }
         });
@@ -65,6 +65,42 @@ function loadSchedule(url,link_to_share) {
 
 }
 
+
+function loadSchedulePpl(url,u_id,pos) {
+    Grid.restoreAll();
+
+    $('message-error').hide();
+    $('message-error').update();
+
+    new Ajax.Request(url,{
+        method: "POST",
+        parameters: {
+            matricula: u_id,
+            internal: true
+        },
+        onSuccess: function(schedule) {
+
+            if(schedule.responseJSON.constructor.toString().indexOf("Array") != -1) {
+                Subject.chargeJSON(schedule.responseJSON);
+
+            } else {
+                //Error
+                $('message-error').show();
+                $('message-error').update(schedule.responseJSON.error);
+            }
+
+            $('password').setValue('');
+            $('user').setValue('');
+
+            document.getElementsByClassName('loader')[pos].style.display= 'none';
+
+        },
+        onLoading: function() {
+            document.getElementsByClassName('loader')[pos].style.display= 'block';
+            document.getElementsByClassName("list-ppl")[pos].setAttribute("style",'background-color: #D8DFEA;');
+        }
+    });
+}
 function linkToShare(user,password,link_to_share) {
 
     //var link_to_share = "link_to_share";

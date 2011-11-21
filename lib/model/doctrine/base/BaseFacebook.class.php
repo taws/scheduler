@@ -51,5 +51,8 @@ abstract class BaseFacebook extends sfDoctrineRecord
         $this->hasOne('Usuario', array(
              'local' => 'usuario_id',
              'foreign' => 'id'));
+
+        $timestampable0 = new Doctrine_Template_Timestampable();
+        $this->actAs($timestampable0);
     }
 }
