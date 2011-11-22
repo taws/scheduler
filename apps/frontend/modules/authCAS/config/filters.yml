@@ -1,0 +1,21 @@
+## YAML Template.
+rendering: ~
+cas_required:
+  class: sfCASRequiredFilter
+  param:
+    # https://auth.mydomain.edu/cas/
+    server_domain: auth.espol.edu.ec
+    server_port: 443
+    server_path: login
+auth_required:
+  class: myFilter
+  enabled: false
+  param:
+    # https://auth.mydomain.edu/cas/
+    server_domain: auth.espol.edu.ec
+    server_port: 443
+    server_path: login
+security:  ~
+## insert your own filters here
+cache:     ~
+execution: ~

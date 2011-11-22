@@ -1,5 +1,12 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
+cas_login:
+  url:     /AuthCAS/login
+  param:   { module: authCAS, action: index }
+
+cas_logout:
+  url:     /AuthCAS/logout
+  param:   { module: authCAS, action: logout }
 
 sharing:
   url:  /sharing
@@ -30,6 +37,10 @@ authentication:
 scheduler:
   url: /S/2qR
   param: { module: viewer, action: scheduler }
+
+ownschedule:
+  url: /O/3qZ
+  param: { module: viewer, action: ownSchedule }
 
 
 

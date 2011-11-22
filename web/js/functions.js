@@ -1,27 +1,7 @@
+var request;
+
 function loadSchedule(url,link_to_share) {
-
-    //var url = url;
-    var ctrl;
-    var user = $('user').getValue();
-    var password = $('password').getValue();
-    
-
-    if(user == '') {
-        $('user').focus();
-        $('user').setStyle({backgroundColor: '#FFF6B2'});
-        setTimeout(function(){
-            $('user').setStyle({backgroundColor: '#FFFFFF'});
-        },1000);
-    }
-    else if(password == '') {
-        $('password').focus();
-        $('password').setStyle({backgroundColor: '#FFF6B2'});
-        setTimeout(function(){
-            $('password').setStyle({backgroundColor: '#FFFFFF'});
-        },1000);
-    }
-    else {
-        
+       
        Grid.restoreAll();
 
         $('sharethis').hide();
@@ -30,16 +10,15 @@ function loadSchedule(url,link_to_share) {
         $('message-error').hide();
         $('message-error').update();
 
-        new Ajax.Request(url,{
+        request= new Ajax.Request(url,{
             method: "POST",
             parameters: {
-                user: user,
-                password: password
+                internal: true
             },
             onSuccess: function(schedule) {
 
                 if(schedule.responseJSON.constructor.toString().indexOf("Array") != -1) {
-                    linkToShare(user, password,link_to_share);
+                    //linkToShare(user, password,link_to_share); //Change to the new enviroment
                     Subject.chargeJSON(schedule.responseJSON);
                     
                 } else {
@@ -48,23 +27,17 @@ function loadSchedule(url,link_to_share) {
                     $('message-error').update(schedule.responseJSON.error);
                 }
 
-                $('password').setValue('');
-                $('user').setValue('');
-
-                ctrl.remove();
+                $('loader-bar').remove();
 
 
             },
             onLoading: function() {
-                ctrl = getBusyOverlay($('main'),
-                            {color:'black', opacity:0.5, text:'Cargando...', style:'font-weight:bold;font-size:14px;color:white'},
-                            {color:'#fff', size:128, type:'o'});
+                $('loader-bar').show();
             }
         });
-    }
+    
 
 }
-
 
 function loadSchedulePpl(url,u_id,pos) {
     Grid.restoreAll();
@@ -72,7 +45,7 @@ function loadSchedulePpl(url,u_id,pos) {
     $('message-error').hide();
     $('message-error').update();
 
-    new Ajax.Request(url,{
+    request=new Ajax.Request(url,{
         method: "POST",
         parameters: {
             matricula: u_id,
@@ -88,9 +61,6 @@ function loadSchedulePpl(url,u_id,pos) {
                 $('message-error').show();
                 $('message-error').update(schedule.responseJSON.error);
             }
-
-            $('password').setValue('');
-            $('user').setValue('');
 
             document.getElementsByClassName('loader')[pos].style.display= 'none';
 
@@ -147,5 +117,71 @@ function loadShareThis(code) {
                         {color:'#fff', size:128, type:'o'});
         }
     });
+
+}
+
+function loadScheduleOld(url,link_to_share) {
+
+    var ctrl;
+    var user = $('user').getValue();
+    var password = $('password').getValue();
+    
+
+    if(user == '') {
+        $('user').focus();
+        $('user').setStyle({backgroundColor: '#FFF6B2'});
+        setTimeout(function(){
+            $('user').setStyle({backgroundColor: '#FFFFFF'});
+        },1000);
+    }
+    else if(password == '') {
+        $('password').focus();
+        $('password').setStyle({backgroundColor: '#FFF6B2'});
+        setTimeout(function(){
+            $('password').setStyle({backgroundColor: '#FFFFFF'});
+        },1000);
+    }
+    else {
+        
+       Grid.restoreAll();
+
+        $('sharethis').hide();
+        $('sharethis').update();
+
+        $('message-error').hide();
+        $('message-error').update();
+
+        request= new Ajax.Request(url,{
+            method: "POST",
+            parameters: {
+                user: user,
+                password: password
+            },
+            onSuccess: function(schedule) {
+
+                if(schedule.responseJSON.constructor.toString().indexOf("Array") != -1) {
+                    linkToShare(user, password,link_to_share);
+                    Subject.chargeJSON(schedule.responseJSON);
+                    
+                } else {
+                    //Error
+                    $('message-error').show();
+                    $('message-error').update(schedule.responseJSON.error);
+                }
+
+                $('password').setValue('');
+                $('user').setValue('');
+
+                ctrl.remove();
+
+
+            },
+            onLoading: function() {
+                ctrl = getBusyOverlay($('main'),
+                            {color:'black', opacity:0.5, text:'Cargando...', style:'font-weight:bold;font-size:14px;color:white'},
+                            {color:'#fff', size:128, type:'o'});
+            }
+        });
+    }
 
 }

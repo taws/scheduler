@@ -2,6 +2,13 @@
 # http://www.symfony-project.org/reference/1_4/en/12-Filters
 
 rendering: ~
+cas_required:
+  class: sfCASRequiredFilter
+  param:
+    # https://auth.mydomain.edu/cas/
+    server_domain: auth.espol.edu.ec
+    server_port: 443
+    server_path: login
 security:  ~
 
 # insert your own filters here

@@ -3,61 +3,84 @@
 class myUser extends sfBasicSecurityUser
 {
     
-    public function getNombre(){
+    
+    public function getFullName(){
 
-//        if($this->getAttribute('usuario')=="")
-//                return 'Anónimo';
+        if($this->getAttribute('usuario')=="")
+                return 'Anónimo';
 
-         $usuario = Doctrine_Core::getTable('Usuario')
-            ->createQuery('u')
-            //->where('u.nombre_usuario = ?', $this->getAttribute('usuario'))
-            ->where('u.nombre_usuario = "aavendan"')
-            ->fetchOne();
+         $usuario = $this->getUserDB();
 
         if($usuario)
         return $usuario->getNombres()." ".$usuario->getApellidos();
-        //return $this->getAttribute('usuario') . " <Usuario desconocido>";
+        return $this->getAttribute('usuario') . " <Usuario desconocido>";
+    }
+    
+    public function getShortName(){
+        
+        if($this->getAttribute('usuario')=="")
+                return 'Anónimo';
+
+         $usuario = $this->getUserDB();
+
+        if($usuario)
+            return Utility::FNameFLast ($usuario->getNombres(), $usuario->getApellidos());
+        return $this->getAttribute('usuario') . " <Usuario desconocido>";
     }
 
     public function getCorreo(){
 
-//        if($this->getAttribute('usuario')=="")
-//                return 'sidweb@cti.espol.edu.ec';
+        if($this->getAttribute('usuario')=="")
+                return 'taws@espol.edu.ec';
 
-         $estudiante = Doctrine_Core::getTable('Usuario')
-            ->createQuery('u')
-            //->where('u.nombre_usuario= ?', $this->getAttribute('usuario'))
-            ->where('u.nombre_usuario= "aavendan"')
-            ->fetchOne();
+         $usuario = $this->getUserDB();
 
-        return trim($estudiante->getCorreo());
+        return trim($usuario->getCorreo());
 
     }
 
 
     public function getIdUsuario(){
-
-          $usuario = Doctrine_Core::getTable('Usuario')
-            ->createQuery('u')
-            //->where('u.nombre_usuario = ?', $this->getAttribute('usuario'))
-            ->where('u.nombre_usuario = "aavendan"')
-            ->andWhere('u.activo = true')
-            ->fetchOne();
+          $usuario = $this->getUserDB();
+          
 
         if($usuario)
         return $usuario->getId();
         return null;
     }
     
-    public function getUsuario(){
+    public function getUserDB(){
 
-          $estudiante = Doctrine_Core::getTable('Usuario')
+          $usuario = Doctrine_Core::getTable('Usuario')
             ->createQuery('u')
-            //->where('u.nombre_usuario= ?', $this->getAttribute('usuario'))
-            ->where('u.nombre_usuario= "aavendan"')
+            ->where('u.nombre_usuario= ?', $this->getAttribute('usuario'))
+            ->andWhere('u.activo = true')
             ->fetchOne();
 
-        return $estudiante;
+        return $usuario;
 
     }
+    
+    public function  clearAuth(){
+
+        $this->setAttribute('auth', null);
+        $this->setAttribute('usuario', null);
+        $this->clearCredentials();
+        $this->UserLogged=null;
+        $this->setAuthenticated(false);
+        
+    }
+    public function getLogoutRoute(){
+        
+
+        return '@cas_logout';
+        
+    }
+    public function CASLogout(){
+
+       $this->clearAuth();
+       phpCAS::logout();
+        
+    }
+    
 }

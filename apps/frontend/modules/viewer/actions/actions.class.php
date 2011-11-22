@@ -80,11 +80,23 @@ class viewerActions extends sfActions
   */
   public function executeScheduler(sfWebRequest $request)
   {
-      $handler = new WSDLHandler();
-      $handler->initWSSAACHandler();
 
       $matricula = $request->getParameter('matricula');
       $internal = $request->getParameter('internal');
+      return $this->processSchedule($matricula, $internal);
+      
+  }
+  
+  public function executeOwnSchedule(sfWebRequest $request)
+  {
+      $matricula = $this->getUser()->getUserDB()->getMatricula();
+      $internal = $request->getParameter('internal');
+      return $this->processSchedule($matricula, $internal);
+  }
+  
+  public function processSchedule($matricula, $internal){
+      $handler = new WSDLHandler();
+      $handler->initWSSAACHandler();
       
       if(isset($internal) && $internal) {
           
@@ -141,7 +153,8 @@ class viewerActions extends sfActions
       }
   }
 
- 
+
+
   public function getExtraData($elements2, $paralelo) {
         for ($i = 0; $i < $elements2->length; $i++) {
             $node = $elements2->item($i);

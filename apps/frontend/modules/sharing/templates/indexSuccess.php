@@ -50,6 +50,8 @@
 
     <script language="javascript">
         function cleanHover() {
+            request.abort();
+            
             var lists = document.getElementsByClassName("list-ppl");
             for(var i=0;i<lists.length;i++)
             {
