@@ -27,7 +27,7 @@ function loadSchedule(url,link_to_share) {
                     $('message-error').update(schedule.responseJSON.error);
                 }
 
-                $('loader-bar').remove();
+                $('loader-bar').hide();
 
 
             },
