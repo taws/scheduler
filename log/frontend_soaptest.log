@@ -1,4 +1,0 @@
-Sep 16 22:51:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
-Sep 16 22:54:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
-Sep 16 22:54:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
-Sep 16 22:55:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'viewer',  'action' => 'index',)
