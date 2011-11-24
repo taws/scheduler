@@ -16,4 +16,29 @@ class UsuarioTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Usuario');
     }
+    
+    public function getUserByToken($token)
+    {
+        return Doctrine_Query::create()
+          ->select('*')
+          ->from('Usuario')
+          ->andWhere('token = ?', $token)
+          ->fetchOne();
+    }
+    public static function usuariosByTag($tag){
+        $resultados=array();
+        $usuarios = Doctrine_Core::getTable("Usuario")
+                ->createQuery('u')
+                ->where("u.admin=false")
+                
+//                ->andWhere("u.nombres LIKE '%a%'")
+                ->andWhere("lower(concat('u.nombres',' ','u.apellidos')) LIKE lower('%".$tag."%')")
+                ->limit(30)
+                ->execute();
+      foreach($usuarios as $usuario){
+          array_push($resultados, array("key" => '"'.$usuario->getToken().'"',"value" => $usuario->getApellidos()." ".$usuario->getNombres()));
+          
+      }
+      return $resultados;
+    }
 }

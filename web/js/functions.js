@@ -4,8 +4,8 @@ function loadSchedule(url,link_to_share) {
        
        Grid.restoreAll();
 
-        $('sharethis').hide();
-        $('sharethis').update();
+//        $('sharethis').hide();
+//        $('sharethis').update();
 
         $('message-error').hide();
         $('message-error').update();
@@ -39,7 +39,7 @@ function loadSchedule(url,link_to_share) {
 
 }
 
-function loadSchedulePpl(url,u_id,pos) {
+function loadSchedulePpl(url,u,pos) {
     Grid.restoreAll();
 
     $('message-error').hide();
@@ -48,7 +48,7 @@ function loadSchedulePpl(url,u_id,pos) {
     request=new Ajax.Request(url,{
         method: "POST",
         parameters: {
-            matricula: u_id,
+            tkn: u,
             internal: true
         },
         onSuccess: function(schedule) {

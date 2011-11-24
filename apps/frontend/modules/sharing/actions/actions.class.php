@@ -17,6 +17,7 @@ class sharingActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      $this->comparten=$this->getUser()->getUserDB()->getComparten();
     
   }
 }

@@ -20,6 +20,8 @@ class viewerActions extends sfActions
      //Forwarded from Share,Index (module,action)
      $this->shared = $request->hasParameter('shared')?$request->getParameter('shared'):false;
      $this->code = $request->hasParameter('code')?$request->getParameter('code'):false;
+
+     
      /*if($this->code) {
         $this->jsVar = $this->getJson(base64_decode($this->code),true);
      }*/
@@ -80,8 +82,8 @@ class viewerActions extends sfActions
   */
   public function executeScheduler(sfWebRequest $request)
   {
-
-      $matricula = $request->getParameter('matricula');
+      $userbytoken=Doctrine_Core::getTable('Usuario')->getUserByToken($request->getParameter('tkn'));
+      $matricula = $userbytoken->getMatricula();
       $internal = $request->getParameter('internal');
       return $this->processSchedule($matricula, $internal);
       

@@ -16,12 +16,12 @@ class myUser extends sfBasicSecurityUser
         return $this->getAttribute('usuario') . " <Usuario desconocido>";
     }
     
-    public function getShortName(){
+    public function getShortName($usuario){
         
         if($this->getAttribute('usuario')=="")
                 return 'Anónimo';
 
-         $usuario = $this->getUserDB();
+         //$usuario = $this->getUserDB();
 
         if($usuario)
             return Utility::FNameFLast ($usuario->getNombres(), $usuario->getApellidos());

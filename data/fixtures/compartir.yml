@@ -5,3 +5,30 @@ Compartir:
   compartir2:
     comparte_id: 4
     compartido_id: 3
+  compartir3:
+    comparte_id: 2
+    compartido_id: 1
+  compartir4:
+    comparte_id: 5
+    compartido_id: 6
+  compartir5:
+    comparte_id: 6
+    compartido_id: 3
+  compartir6:
+    comparte_id: 2
+    compartido_id: 4
+  compartir7:
+    comparte_id: 3
+    compartido_id: 4
+  compartir8:
+    comparte_id: 5
+    compartido_id: 4
+  compartir9:
+    comparte_id: 6
+    compartido_id: 4
+  compartir10:
+    comparte_id: 7
+    compartido_id: 4
+  compartir11:
+    comparte_id: 8
+    compartido_id: 4

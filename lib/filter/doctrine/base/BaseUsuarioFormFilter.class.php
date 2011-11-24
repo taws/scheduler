@@ -33,10 +33,11 @@ abstract class BaseUsuarioFormFilter extends BaseFormFilterDoctrine
       'espol'              => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'activo'             => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'eliminado'          => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'token'              => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'created_at'         => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'updated_at'         => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
-      'usuario_list'       => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
-      'usuarios_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
+      'compartidos_list'   => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
+      'comparten_list'     => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
     ));
 
     $this->setValidators(array(
@@ -60,10 +61,11 @@ abstract class BaseUsuarioFormFilter extends BaseFormFilterDoctrine
       'espol'              => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'activo'             => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'eliminado'          => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'token'              => new sfValidatorPass(array('required' => false)),
       'created_at'         => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'updated_at'         => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
-      'usuario_list'       => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
-      'usuarios_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
+      'compartidos_list'   => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
+      'comparten_list'     => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('usuario_filters[%s]');
@@ -75,7 +77,7 @@ abstract class BaseUsuarioFormFilter extends BaseFormFilterDoctrine
     parent::setup();
   }
 
-  public function addUsuarioListColumnQuery(Doctrine_Query $query, $field, $values)
+  public function addCompartidosListColumnQuery(Doctrine_Query $query, $field, $values)
   {
     if (!is_array($values))
     {
@@ -93,7 +95,7 @@ abstract class BaseUsuarioFormFilter extends BaseFormFilterDoctrine
     ;
   }
 
-  public function addUsuariosListColumnQuery(Doctrine_Query $query, $field, $values)
+  public function addCompartenListColumnQuery(Doctrine_Query $query, $field, $values)
   {
     if (!is_array($values))
     {
@@ -140,10 +142,11 @@ abstract class BaseUsuarioFormFilter extends BaseFormFilterDoctrine
       'espol'              => 'Boolean',
       'activo'             => 'Boolean',
       'eliminado'          => 'Boolean',
+      'token'              => 'Text',
       'created_at'         => 'Date',
       'updated_at'         => 'Date',
-      'usuario_list'       => 'ManyKey',
-      'usuarios_list'      => 'ManyKey',
+      'compartidos_list'   => 'ManyKey',
+      'comparten_list'     => 'ManyKey',
     );
   }
 }

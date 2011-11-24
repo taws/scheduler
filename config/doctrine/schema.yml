@@ -23,14 +23,17 @@ Usuario:
     espol: { type: boolean, default: 0 }
     activo: { type: boolean, default: 0 }   
     eliminado: { type: boolean, default: 0 }
+    token:   { type: string(255), notnull: true, unique: true }
   relations:
-    Usuario:
+    Compartidos:
       class: Usuario
       local: comparte_id
       foreign: compartido_id
-      type: many
-      foreignType: many
-      foreignAlias: Usuarios
+      refClass: Compartir
+    Comparten:
+      class: Usuario
+      local: compartido_id
+      foreign: comparte_id
       refClass: Compartir
     
 Compartir:
@@ -50,4 +53,4 @@ Facebook:
     fb_id: { type: integer (4), notnull: true} 
     activo: { type: boolean, default: 1 }
   relations:
-    Usuario: { local: usuario_id, foreign: id, foreignAlias: Usuario }    
+    Usuario: { local: usuario_id, foreign: id, foreignAlias: Usuario }  

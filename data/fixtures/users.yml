@@ -13,11 +13,11 @@ Usuario:
   usuario2:
     id: 2
     identificacion: '0925813273'
-    matricula: '200600088'
+    matricula: '200801033'
     nombre_usuario: 'juagarod'
     contrasenia: 'j'
-    nombres: 'Juan Gabriel'
-    apellidos: 'Rodriguez Fernandez'
+    nombres: 'Efrain'
+    apellidos: 'Astudillo'
     correo: 'juagarod@espol.edu.ec'
     activo: true
     genero: M
@@ -57,33 +57,33 @@ Usuario:
   usuario6:
     id: 6
     identificacion: '092521458'
-    matricula: '200407757'
+    matricula: '200800845'
     nombre_usuario: 'leespin'
     contrasenia: 'l'
-    nombres: 'Lisette Elizabeth'
-    apellidos: 'Espin Noboa'
+    nombres: 'Jefferson'
+    apellidos: 'Rubio'
     correo: 'leespin@espol.edu.ec'
     activo: true
-    genero: F
+    genero: M
   usuario7:
     id: 7
     identificacion: '0926155245'
-    matricula: '200015681'
+    matricula: '200904001'
     nombre_usuario: 'xaoch'
     contrasenia: 'x'
-    nombres: 'Xavier Antonio'
-    apellidos: 'Ochoa Chehab'
+    nombres: 'Leonardo'
+    apellidos: 'Hernandez'
     correo: 'sidweb@cti.espol.edu.ec'
     activo: true
     genero: M
   usuario8:
     id: 8
     identificacion: '0915803273'
-    matricula: '200505373'
+    matricula: '200902278'
     nombre_usuario: 'kchilui'
     contrasenia: 'k'
-    nombres: 'Katherine Malena'
-    apellidos: 'Chiluiza García'
+    nombres: 'Jefferson'
+    apellidos: 'Cunalata'
     correo: 'sidweb@cti.espol.edu.ec'
     activo: true
     genero: F
@@ -109,14 +109,4 @@ Usuario:
     correo: 'aavendan@espol.edu.ec'
     activo: true
     genero: M
-  usuario11:
-    id: 11
-    identificacion: ''
-    matricula: ''
-    nombre_usuario: 'sidwebadmin'
-    contrasenia: 'h8bmbfar'
-    nombres: 'SIDWeb'
-    apellidos: 'Admin'
-    correo: 'sidweb@cti.espol.edu.ec'
-    admin: true
-    activo: true
+  

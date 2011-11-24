@@ -38,7 +38,7 @@ ul.tabs a {
 	padding: 0px 0px 0px 10px;	
 	position:relative;
 	top:0px;
-	background:  url(../img/tabs.png) no-repeat;
+/*	background:  url(../img/tabs.png) no-repeat;*/
 }
 
 ul.tabs a span{ 
@@ -58,12 +58,12 @@ ul.tabs a:active {
 
 /* when mouse enters the tab move the background image */
 #content ul.tabs a:hover { 
-	background-position: 0px -80px;
+/*	background-position: 0px -80px;*/
 }
 
 #content ul.tabs a:hover span,
 #content ul.tabs a.current span{ 
-	background-position: right -120px;
+/*	background-position: right -120px;*/
 }
 
 /* active tab uses a class name "current". its highlight is also done by moving the background image. */

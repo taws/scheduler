@@ -103,7 +103,7 @@ ul, li{
     background-repeat: no-repeat;
     background-position: -56px -315px;
     height: 31px;
-    width: 24px;
+    width: 8px;
 }
 #header{
 	height: 111px;
@@ -113,7 +113,7 @@ ul, li{
 	/*background: #2a2d30 url(../img/header-glow.png) top center no-repeat;*/
 }
 #leftbar{
-    margin-top: 46px;
+    margin-top: 37px;
     float: left;
     width: 20%;
     padding-right: 8px;
@@ -141,7 +141,8 @@ ul, li{
 }
 
 #main{
-	width: 100%;
+    padding-top: 0.5%;
+    width: 100%;
         
 }
 
@@ -159,9 +160,9 @@ ul, li{
 	left: 30px;
 }
 
-#content a{
+/*#content a{
 	color: #37b2d1;
-}
+}*/
 
 #content p{
 	margin-bottom: 20px;

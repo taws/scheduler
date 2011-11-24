@@ -30,6 +30,7 @@ class sfCASRequiredFilter extends sfBasicSecurityFilter
             $this->getContext()->getUser()->setAuthenticated(true);
             $this->getContext()->getUser()->setAttribute('usuario', phpCAS::getUser());
             
+            
 
         }
 

@@ -35,19 +35,29 @@
     
   </head>
   <body>
+      <?php $user=$sf_user->getUserDB();?>
       <div id="menu">
+          <div id="menu-holder-left">
+              <ul>
+                  <li class="inline hvr <?php if (!include_slot('class-selection-hvr')): ?><?php endif ?>">
+                    <a class="inline-padding" href="<?php if (!include_slot('href-class-schedule')): ?>#<?php endif ?>" onclick="<?php if (!include_slot('class-schedule')): ?><?php endif ?>">Horario de Clases</a>
+                  </li>
+                  
+              </ul>
+          </div>
           <div id="menu-holder">
+              
               <ul>
               
-              <li class="inline hvr <?php if (!include_slot('sharing-hvr')): ?><?php endif ?>">
-                  <a class="inline-padding" href="<?php echo url_for1('sharing') ?>">Horarios Compartidos <strong>(5)</strong></a>
+              <li class="inline hvr <?php if (!include_slot('sharing-selection-hvr')): ?><?php endif ?>">
+                  <a class="inline-padding" href="<?php echo url_for1('sharing') ?>">Horarios Compartidos <strong>(<?php echo sizeof($user->getComparten()); ?>)</strong></a>
               </li>
               <span class="inline inline-padding separator">|</span>
               
               <li class="inline hvr">
-                  <img class="inline userphoto" src="http://www.academico.espol.edu.ec/imgEstudiante/<?php echo $sf_user->getUserDB()->getMatricula() ?>.jpg" alt="" title=""></img>
+                  <?php include_partial('viewer/user_photo', array('usuario' => $user,'class' => 'inline')) ?>
                   <a class="inline" href="#">
-                    <div class="inline name-padding"><?php echo $sf_user->getShortName() ?></div>
+                    <div class="inline name-padding"><?php echo $sf_user->getShortName($user) ?></div>
                   
                     <div class="inline inline-padding pulldown"></div>
                   </a>
@@ -78,14 +88,22 @@
       <div id="main">   
         <div class="wrapper">    
             <div id="content">
+                <?php if($sf_user->isAuthenticated()): ?>
+                
                 <ul class="tabs">
+                    
                     <?php if (!include_slot('sharethis')): ?><?php endif ?>
                     <ul id="message-error" style="text-align:center; width: auto; color: red; font-size: 15px; padding-left: 75px;"></ul>
                     <?php if (!include_slot('loader-bar')): ?><?php endif ?>
                 </ul>
+                <?php if (!include_slot('sharing-to')): ?><?php endif ?>
+                
                 <?php if (!include_slot('leftbar')): ?><?php endif ?>
       
                 <?php echo $sf_content ?>
+                
+                <?php endif; ?>
+                
             </div>
         </div>
       </div>

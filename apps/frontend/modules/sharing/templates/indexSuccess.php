@@ -1,51 +1,34 @@
-<?php slot('sharing-hvr') ?>border-top-menu<?php end_slot()?>
+<?php slot('sharing-selection-hvr') ?>border-top-menu<?php end_slot()?>
 
-<?php if(true):?>
+<?php slot('href-class-schedule') ?><?php echo url_for('homepage') ?><?php end_slot()?>
+
+
+<?php if(sizeof($comparten)!=0):?>
 <?php slot('leftbar') ?>
     
     <ul id="leftbar">
-        <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200703080','0'); return false;" >
-            <li class="list-ppl">
-                <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/200703080.jpg" class="userphoto pplpic"/>
-                <div class="ppl-name">Jhonny Pincay</div>
-                <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
-            </li>
-        </a>
-        <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200801033','1'); return false;" >
-            <li class="list-ppl">   
-                <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/200801033.jpg" class="userphoto pplpic"/>
-                <div class="ppl-name">Efrain Astudillo</div>       
-                <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
-            </li>
-        </a>
-        <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200800845','2'); return false;" >
-            <li class="list-ppl">   
-                <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/200800845.jpg" class="userphoto pplpic"/>
-                <div class="ppl-name">Jefferson Rubio</div>       
-                <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
-            </li>
-        </a>
-        <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200904001','3'); return false;" >
-            <li class="list-ppl">   
-                <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/200904001.jpg" class="userphoto pplpic"/>
-                <div class="ppl-name">Leonardo Hernandez</div>       
-                <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
-            </li>
-        </a>
-        <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200902278','4'); return false;" >
-            <li class="list-ppl">   
-                <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/200902278.jpg" class="userphoto pplpic"/>
-                <div class="ppl-name">Jefferson Cunalata</div>       
-                <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
-            </li>
-        </a>
-        <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200626851','5'); return false;" >
-            <li class="list-ppl">   
-                <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/200626851.jpg" class="userphoto pplpic"/>
-                <div class="ppl-name">Felix Rivas</div>       
-                <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
-            </li>
-        </a>
+        
+        <?php $i=0; foreach($comparten as $user_comparten): ?>
+            <?php if($i==0): ?>
+                <script language="javascript">
+                      window.onload = function ()
+                        {
+                            loadSchedulePpl('<?php echo url_for1('scheduler') ?>','<?php echo $user_comparten->getToken(); ?>','0');
+
+                        };
+                </script>  
+            <?php endif; ?>
+                    
+            <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','<?php echo $user_comparten->getToken(); ?>','<?php echo $i; ?>'); return false;" >
+                <li class="list-ppl">
+                    <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/<?php echo $user_comparten->getMatricula(); ?>.jpg" class="userphoto pplpic"/>
+                    <div class="ppl-name"><?php echo Utility::FNameFLast ($user_comparten->getNombres(), $user_comparten->getApellidos()); ?></div>
+                    <img class="loader" style="display: none;" title="" alt="" src="/images/loader-small.gif" />
+                </li>
+            </a>
+            <?php $i=$i+1 ?>
+        <?php endforeach; ?>
+        
     </ul>
 
     <script language="javascript">
@@ -61,15 +44,15 @@
             
         }
     </script>
-    <script language="javascript">
-          window.onload = function ()
-            {
-                loadSchedulePpl('<?php echo url_for1('scheduler') ?>','200703080','0');
-
-            };
-    </script>  
+    
     
 <?php end_slot()?>
+<?php else: ?>
+    <ul id="leftbar">
+        <li class="list-ppl" style="text-align: center;">
+            Ninguna persona ha compartido su horario contigo
+        </li>
+    </ul>
 <?php endif;?>
     
 <?php include_partial('viewer/schedule') ?>

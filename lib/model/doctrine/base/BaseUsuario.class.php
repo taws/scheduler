@@ -26,8 +26,9 @@
  * @property boolean $espol
  * @property boolean $activo
  * @property boolean $eliminado
- * @property Doctrine_Collection $Usuario
- * @property Doctrine_Collection $Usuarios
+ * @property string $token
+ * @property Doctrine_Collection $Compartidos
+ * @property Doctrine_Collection $Comparten
  * 
  * @method integer             getId()                 Returns the current record's "id" value
  * @method string              getIdentificacion()     Returns the current record's "identificacion" value
@@ -50,8 +51,9 @@
  * @method boolean             getEspol()              Returns the current record's "espol" value
  * @method boolean             getActivo()             Returns the current record's "activo" value
  * @method boolean             getEliminado()          Returns the current record's "eliminado" value
- * @method Doctrine_Collection getUsuario()            Returns the current record's "Usuario" collection
- * @method Doctrine_Collection getUsuarios()           Returns the current record's "Usuarios" collection
+ * @method string              getToken()              Returns the current record's "token" value
+ * @method Doctrine_Collection getCompartidos()        Returns the current record's "Compartidos" collection
+ * @method Doctrine_Collection getComparten()          Returns the current record's "Comparten" collection
  * @method Usuario             setId()                 Sets the current record's "id" value
  * @method Usuario             setIdentificacion()     Sets the current record's "identificacion" value
  * @method Usuario             setMatricula()          Sets the current record's "matricula" value
@@ -73,8 +75,9 @@
  * @method Usuario             setEspol()              Sets the current record's "espol" value
  * @method Usuario             setActivo()             Sets the current record's "activo" value
  * @method Usuario             setEliminado()          Sets the current record's "eliminado" value
- * @method Usuario             setUsuario()            Sets the current record's "Usuario" collection
- * @method Usuario             setUsuarios()           Sets the current record's "Usuarios" collection
+ * @method Usuario             setToken()              Sets the current record's "token" value
+ * @method Usuario             setCompartidos()        Sets the current record's "Compartidos" collection
+ * @method Usuario             setComparten()          Sets the current record's "Comparten" collection
  * 
  * @package    scheduler
  * @subpackage model
@@ -176,17 +179,23 @@ abstract class BaseUsuario extends sfDoctrineRecord
              'type' => 'boolean',
              'default' => 0,
              ));
+        $this->hasColumn('token', 'string', 255, array(
+             'type' => 'string',
+             'notnull' => true,
+             'unique' => true,
+             'length' => 255,
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('Usuario', array(
+        $this->hasMany('Usuario as Compartidos', array(
              'refClass' => 'Compartir',
              'local' => 'comparte_id',
              'foreign' => 'compartido_id'));
 
-        $this->hasMany('Usuario as Usuarios', array(
+        $this->hasMany('Usuario as Comparten', array(
              'refClass' => 'Compartir',
              'local' => 'compartido_id',
              'foreign' => 'comparte_id'));

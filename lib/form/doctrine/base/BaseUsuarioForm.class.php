@@ -36,10 +36,11 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       'espol'              => new sfWidgetFormInputCheckbox(),
       'activo'             => new sfWidgetFormInputCheckbox(),
       'eliminado'          => new sfWidgetFormInputCheckbox(),
+      'token'              => new sfWidgetFormInputText(),
       'created_at'         => new sfWidgetFormDateTime(),
       'updated_at'         => new sfWidgetFormDateTime(),
-      'usuario_list'       => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
-      'usuarios_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
+      'compartidos_list'   => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
+      'comparten_list'     => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
     ));
 
     $this->setValidators(array(
@@ -64,16 +65,18 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       'espol'              => new sfValidatorBoolean(array('required' => false)),
       'activo'             => new sfValidatorBoolean(array('required' => false)),
       'eliminado'          => new sfValidatorBoolean(array('required' => false)),
+      'token'              => new sfValidatorString(array('max_length' => 255)),
       'created_at'         => new sfValidatorDateTime(),
       'updated_at'         => new sfValidatorDateTime(),
-      'usuario_list'       => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
-      'usuarios_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
+      'compartidos_list'   => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
+      'comparten_list'     => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(
       new sfValidatorAnd(array(
         new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('id'))),
         new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('identificacion'))),
+        new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('token'))),
       ))
     );
 
@@ -95,34 +98,34 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
   {
     parent::updateDefaultsFromObject();
 
-    if (isset($this->widgetSchema['usuario_list']))
+    if (isset($this->widgetSchema['compartidos_list']))
     {
-      $this->setDefault('usuario_list', $this->object->Usuario->getPrimaryKeys());
+      $this->setDefault('compartidos_list', $this->object->Compartidos->getPrimaryKeys());
     }
 
-    if (isset($this->widgetSchema['usuarios_list']))
+    if (isset($this->widgetSchema['comparten_list']))
     {
-      $this->setDefault('usuarios_list', $this->object->Usuarios->getPrimaryKeys());
+      $this->setDefault('comparten_list', $this->object->Comparten->getPrimaryKeys());
     }
 
   }
 
   protected function doSave($con = null)
   {
-    $this->saveUsuarioList($con);
-    $this->saveUsuariosList($con);
+    $this->saveCompartidosList($con);
+    $this->saveCompartenList($con);
 
     parent::doSave($con);
   }
 
-  public function saveUsuarioList($con = null)
+  public function saveCompartidosList($con = null)
   {
     if (!$this->isValid())
     {
       throw $this->getErrorSchema();
     }
 
-    if (!isset($this->widgetSchema['usuario_list']))
+    if (!isset($this->widgetSchema['compartidos_list']))
     {
       // somebody has unset this widget
       return;
@@ -133,8 +136,8 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       $con = $this->getConnection();
     }
 
-    $existing = $this->object->Usuario->getPrimaryKeys();
-    $values = $this->getValue('usuario_list');
+    $existing = $this->object->Compartidos->getPrimaryKeys();
+    $values = $this->getValue('compartidos_list');
     if (!is_array($values))
     {
       $values = array();
@@ -143,24 +146,24 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
     $unlink = array_diff($existing, $values);
     if (count($unlink))
     {
-      $this->object->unlink('Usuario', array_values($unlink));
+      $this->object->unlink('Compartidos', array_values($unlink));
     }
 
     $link = array_diff($values, $existing);
     if (count($link))
     {
-      $this->object->link('Usuario', array_values($link));
+      $this->object->link('Compartidos', array_values($link));
     }
   }
 
-  public function saveUsuariosList($con = null)
+  public function saveCompartenList($con = null)
   {
     if (!$this->isValid())
     {
       throw $this->getErrorSchema();
     }
 
-    if (!isset($this->widgetSchema['usuarios_list']))
+    if (!isset($this->widgetSchema['comparten_list']))
     {
       // somebody has unset this widget
       return;
@@ -171,8 +174,8 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       $con = $this->getConnection();
     }
 
-    $existing = $this->object->Usuarios->getPrimaryKeys();
-    $values = $this->getValue('usuarios_list');
+    $existing = $this->object->Comparten->getPrimaryKeys();
+    $values = $this->getValue('comparten_list');
     if (!is_array($values))
     {
       $values = array();
@@ -181,13 +184,13 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
     $unlink = array_diff($existing, $values);
     if (count($unlink))
     {
-      $this->object->unlink('Usuarios', array_values($unlink));
+      $this->object->unlink('Comparten', array_values($unlink));
     }
 
     $link = array_diff($values, $existing);
     if (count($link))
     {
-      $this->object->link('Usuarios', array_values($link));
+      $this->object->link('Comparten', array_values($link));
     }
   }
 
