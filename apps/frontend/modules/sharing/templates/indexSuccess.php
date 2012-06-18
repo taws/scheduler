@@ -4,8 +4,9 @@
 
 
 <?php if(sizeof($comparten)!=0):?>
+
 <?php slot('leftbar') ?>
-    
+ 
     <ul id="leftbar">
         
         <?php $i=0; foreach($comparten as $user_comparten): ?>
@@ -14,12 +15,13 @@
                       window.onload = function ()
                         {
                             loadSchedulePpl('<?php echo url_for1('scheduler') ?>','<?php echo $user_comparten->getToken(); ?>','0');
+                            checkShare('<?php echo url_for1('check_sharing') ?>');
 
                         };
                 </script>  
             <?php endif; ?>
                     
-            <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','<?php echo $user_comparten->getToken(); ?>','<?php echo $i; ?>'); return false;" >
+            <a href="#" onclick="cleanHover(); loadSchedulePpl('<?php echo url_for1('scheduler') ?>','<?php echo $user_comparten->getToken(); ?>','<?php echo $i; ?>'); checkShare('<?php echo url_for1('check_sharing') ?>'); return false;" >
                 <li class="list-ppl">
                     <img title="" alt="" src="http://www.academico.espol.edu.ec/imgEstudiante/<?php echo $user_comparten->getMatricula(); ?>.jpg" class="userphoto pplpic"/>
                     <div class="ppl-name"><?php echo Utility::FNameFLast ($user_comparten->getNombres(), $user_comparten->getApellidos()); ?></div>
@@ -47,6 +49,18 @@
     
     
 <?php end_slot()?>
+
+<?php slot('sharing-to') ?>
+    
+    <div id="sharing" >
+    <div id="sharing-buttons" class="sharing" style="padding-right: 0;">
+        <a id="unshare" href="#" onclick="unshare('<?php echo url_for1('unshare') ?>')" class="button delete" style="display: none;">Dejar de compartr tu horario con</a>
+        <a id="share" href="#" onclick="shareBack('<?php echo url_for1('share_back') ?>')" class="button add" style="display: none;">Comparte tu horario con</a>
+    </div>
+        
+    </div>
+<?php end_slot()?>
+    
 <?php else: ?>
     <ul id="leftbar">
         <li class="list-ppl" style="text-align: center;">
@@ -54,7 +68,7 @@
         </li>
     </ul>
 <?php endif;?>
-    
+
 <?php include_partial('viewer/schedule') ?>
     
 <script language="javascript">

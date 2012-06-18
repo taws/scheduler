@@ -12,5 +12,5 @@
  */
 class Compartir extends BaseCompartir
 {
-
+    
 }

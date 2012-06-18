@@ -151,6 +151,7 @@ ul, li{
 	overflow: hidden;
 	margin-bottom: 0px;
 	font-size: 14px;
+        position: relative;
 	/*line-height: 1.5em;*/
 }
 

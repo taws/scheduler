@@ -108,75 +108,39 @@ table#grid-table tbody#grid-table-body td.selected:hover{
 
 /*Colours for selected cells with equal content*/
 table#grid-table tbody#grid-table-body td.value2{
-  border-width: 1.8px;
-  border-color: #3F3A00;
-  border-style: solid;
   background:#DFCE1B url('../../images/default/grid/value1.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value5{
-  border-width: 1.8px;
-  border-color: #6F4637;
-  border-style: solid;
   background:#EFAC95 url('../../images/default/grid/value2.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value1{
-  border-width: 1.8px;
-  border-color: #235F4D;
-  border-style: solid;
   background: #82D6C7 url('../../images/default/grid/value3.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value4{
-  border-width: 1.8px;
-  border-color: #77628F;
-  border-style: solid;
   background:#EDDFF6 url('../../images/default/grid/value4.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value8{
-  border-width: 1.8px;
-  border-color: #22384F;
-  border-style: solid;
   background:#8BB3DF url('../../images/default/grid/value5.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value6{
-  border-width: 1.8px;
-  border-color: #306C6F;
-  border-style: solid;
   background:#72D5DC url('../../images/default/grid/value6.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value7{
-  border-width: 1.8px;
-  border-color: #2C7E8F;
-  border-style: solid;
   background:#6BDAF7 url('../../images/default/grid/value7.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value3{
-  border-width: 1.8px;
-  border-color: #226F3B;
-  border-style: solid;
   background:#67CF7C url('../../images/default/grid/value8.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value9{
-  border-width: 1.8px;
-  border-color: #58377F;
-  border-style: solid;
   background: #A053BC url('../../images/default/grid/value9.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value10{
-  border-width: 1.8px;
-  border-color: #BC9BBF;
-  border-style: solid;
   background:#FDDFFF url('../../images/default/grid/value10.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value11{
-  border-width: 1.8px;
-  border-color: #9F683B;
-  border-style: solid;
   background:#EFA468 url('../../images/default/grid/value11.png') repeat-x scroll left top;
 }
 table#grid-table tbody#grid-table-body td.value12{
-  border-width: 1.8px;
-  border-color: #0D6F2D;
-  border-style: solid;
   background:#19CF54 url('../../images/default/grid/value12.png') repeat-x scroll left top;
 }
 

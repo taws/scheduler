@@ -1,4 +1,5 @@
 var request;
+var token;
 
 function loadSchedule(url,link_to_share) {
        
@@ -6,7 +7,7 @@ function loadSchedule(url,link_to_share) {
 
 //        $('sharethis').hide();
 //        $('sharethis').update();
-
+        
         $('message-error').hide();
         $('message-error').update();
 
@@ -28,10 +29,12 @@ function loadSchedule(url,link_to_share) {
                 }
 
                 $('loader-bar').hide();
+                $('tabs-top').hide();
 
 
             },
             onLoading: function() {
+                $('tabs-top').show();
                 $('loader-bar').show();
             }
         });
@@ -41,7 +44,7 @@ function loadSchedule(url,link_to_share) {
 
 function loadSchedulePpl(url,u,pos) {
     Grid.restoreAll();
-
+    this.token=u;
     $('message-error').hide();
     $('message-error').update();
 
@@ -52,7 +55,6 @@ function loadSchedulePpl(url,u,pos) {
             internal: true
         },
         onSuccess: function(schedule) {
-
             if(schedule.responseJSON.constructor.toString().indexOf("Array") != -1) {
                 Subject.chargeJSON(schedule.responseJSON);
 
@@ -63,6 +65,8 @@ function loadSchedulePpl(url,u,pos) {
             }
 
             document.getElementsByClassName('loader')[pos].style.display= 'none';
+            
+            
 
         },
         onLoading: function() {
@@ -71,6 +75,98 @@ function loadSchedulePpl(url,u,pos) {
         }
     });
 }
+
+function checkShare(url){
+    
+    request=new Ajax.Request(url,{
+        method: "POST",
+        parameters: {
+            tkn: this.token,
+            internal: true
+        },
+        onSuccess: function(sharing) {
+           
+            if(!sharing.responseJSON.isSharing){
+                $('unshare').hide();
+                $('share').update('Comparte tu horario con '+sharing.responseJSON.name);
+                $('share').show();
+                
+            }else{
+                $('share').hide();
+                $('unshare').update('Dejar de compartir tu horario con '+sharing.responseJSON.name);
+                $('unshare').show();
+            }
+
+        },
+        onLoading: function() {
+            
+        }
+    });
+    
+    
+}
+
+function shareBack(url){
+    $('message-error').hide();
+    $('message-error').update();
+    
+    request=new Ajax.Request(url,{
+        method: "POST",
+        parameters: {
+            tkn: this.token,
+            internal: true
+        },
+        onSuccess: function(sharing) {
+          
+            if(sharing.responseJSON.ok){
+                
+                $('share').hide();
+                $('unshare').update('Dejar de compartir tu horario con '+sharing.responseJSON.name);
+                $('unshare').show();
+            }else{
+                
+                $('message-error').show();
+                $('message-error').update(sharing.responseJSON.msj);
+            }
+
+        },
+        onLoading: function() {
+            
+        }
+    });
+    
+}
+function unshare(url){
+    $('message-error').hide();
+    $('message-error').update();
+ 
+    request=new Ajax.Request(url,{
+        method: "POST",
+        parameters: {
+            tkn: this.token,
+            internal: true
+        },
+        onSuccess: function(sharing) {
+          
+            if(sharing.responseJSON.ok){
+                
+                $('unshare').hide();
+                $('share').update('Comparte tu horario con '+sharing.responseJSON.name);
+                $('share').show();
+            }else{
+     
+                $('message-error').show();
+                $('message-error').update(sharing.responseJSON.msj);
+            }
+
+        },
+        onLoading: function() {
+            
+        }
+    });
+    
+}
+
 function linkToShare(user,password,link_to_share) {
 
     //var link_to_share = "link_to_share";

@@ -16,7 +16,6 @@ class UsuarioTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Usuario');
     }
-    
     public function getUserByToken($token)
     {
         return Doctrine_Query::create()
@@ -25,6 +24,16 @@ class UsuarioTable extends Doctrine_Table
           ->andWhere('token = ?', $token)
           ->fetchOne();
     }
+    public function getUserBySearchToken($token){
+        
+        return Doctrine_Query::create()
+          ->select('*')
+          ->from('Usuario')
+          ->andWhere('search_token = ?', $token)
+          ->fetchOne();
+      
+    }
+    
     public static function usuariosByTag($tag){
         $resultados=array();
         $usuarios = Doctrine_Core::getTable("Usuario")

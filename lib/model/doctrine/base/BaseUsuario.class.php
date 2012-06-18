@@ -27,6 +27,7 @@
  * @property boolean $activo
  * @property boolean $eliminado
  * @property string $token
+ * @property string $search_token
  * @property Doctrine_Collection $Compartidos
  * @property Doctrine_Collection $Comparten
  * 
@@ -52,6 +53,7 @@
  * @method boolean             getActivo()             Returns the current record's "activo" value
  * @method boolean             getEliminado()          Returns the current record's "eliminado" value
  * @method string              getToken()              Returns the current record's "token" value
+ * @method string              getSearchToken()        Returns the current record's "search_token" value
  * @method Doctrine_Collection getCompartidos()        Returns the current record's "Compartidos" collection
  * @method Doctrine_Collection getComparten()          Returns the current record's "Comparten" collection
  * @method Usuario             setId()                 Sets the current record's "id" value
@@ -76,6 +78,7 @@
  * @method Usuario             setActivo()             Sets the current record's "activo" value
  * @method Usuario             setEliminado()          Sets the current record's "eliminado" value
  * @method Usuario             setToken()              Sets the current record's "token" value
+ * @method Usuario             setSearchToken()        Sets the current record's "search_token" value
  * @method Usuario             setCompartidos()        Sets the current record's "Compartidos" collection
  * @method Usuario             setComparten()          Sets the current record's "Comparten" collection
  * 
@@ -181,7 +184,11 @@ abstract class BaseUsuario extends sfDoctrineRecord
              ));
         $this->hasColumn('token', 'string', 255, array(
              'type' => 'string',
-             'notnull' => true,
+             'unique' => true,
+             'length' => 255,
+             ));
+        $this->hasColumn('search_token', 'string', 255, array(
+             'type' => 'string',
              'unique' => true,
              'length' => 255,
              ));

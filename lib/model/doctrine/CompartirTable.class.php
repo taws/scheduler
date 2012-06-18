@@ -16,4 +16,13 @@ class CompartirTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Compartir');
     }
+    public function getByIds($comparteId,$compartidoId)
+    {
+        return Doctrine_Query::create()
+          ->select('*')
+          ->from('Compartir')
+          ->andWhere('comparte_id = ?', $comparteId)
+          ->andWhere('compartido_id = ?', $compartidoId)
+          ->fetchOne();
+    }
 }

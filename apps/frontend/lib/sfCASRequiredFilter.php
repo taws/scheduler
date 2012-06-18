@@ -12,7 +12,7 @@ class sfCASRequiredFilter extends sfBasicSecurityFilter
             //Windows
         }else {
             //phpCAS::setDebug($filename = '/var/www/html/SIDWeb/phpCAS.log');
-            phpCAS::setDebug($filename = '/tmp/sidweb/cas/phpCAS.log');
+            phpCAS::setDebug($filename = '/tmp/scheduler/cas/phpCAS.log');
             //Linux
         }
         

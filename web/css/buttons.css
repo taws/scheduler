@@ -6,7 +6,7 @@
 .sharing {
     float: right;
     padding-bottom: 1%;
-    padding-right: 12.5%;
+    padding-right: 13.5%;
     
 }
 a.button {
@@ -28,7 +28,7 @@ a.button {
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    margin-right: 10px;
+/*    margin-right: 10px;*/
 }
 a.button:hover {
     color: #333;

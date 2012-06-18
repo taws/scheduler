@@ -23,7 +23,8 @@ Usuario:
     espol: { type: boolean, default: 0 }
     activo: { type: boolean, default: 0 }   
     eliminado: { type: boolean, default: 0 }
-    token:   { type: string(255), notnull: true, unique: true }
+    token:   { type: string(255), unique: true }
+    search_token:   { type: string(255), unique: true }
   relations:
     Compartidos:
       class: Usuario

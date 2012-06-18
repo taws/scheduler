@@ -16,7 +16,23 @@ cas_logout:
 sharing:
   url:  /sharing
   param: { module: sharing, action: index }
-  
+
+sharing_save:
+  url:  /sharingsave
+  param: { module: sharing, action: share }
+
+usuario_json:
+  url:      /SU/1v
+  param:   { module: sharing, action: jsonusuarios }
+check_sharing:
+  url:      /CS/3r
+  param:   { module: sharing, action: checksharing }
+share_back:
+  url:      /AW/8d
+  param:   { module: sharing, action: shareback }
+unshare:
+  url:      /UN/5q
+  param:   { module: sharing, action: unshare }
 share_fails:
   url: /share
   param: { module: viewer, action: index }

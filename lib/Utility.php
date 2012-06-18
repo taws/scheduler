@@ -17,6 +17,10 @@ class Utility {
         $arraylastnames=explode(" ", $last_names);
         return $arraynames[0]." ".$arraylastnames[0];
     }
+    public static function FName($names){
+        $arraynames=explode(" ", $names);
+        return $arraynames[0];
+    }
 }
 
 ?>

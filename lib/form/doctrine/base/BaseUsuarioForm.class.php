@@ -37,6 +37,7 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       'activo'             => new sfWidgetFormInputCheckbox(),
       'eliminado'          => new sfWidgetFormInputCheckbox(),
       'token'              => new sfWidgetFormInputText(),
+      'search_token'       => new sfWidgetFormInputText(),
       'created_at'         => new sfWidgetFormDateTime(),
       'updated_at'         => new sfWidgetFormDateTime(),
       'compartidos_list'   => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Usuario')),
@@ -65,7 +66,8 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
       'espol'              => new sfValidatorBoolean(array('required' => false)),
       'activo'             => new sfValidatorBoolean(array('required' => false)),
       'eliminado'          => new sfValidatorBoolean(array('required' => false)),
-      'token'              => new sfValidatorString(array('max_length' => 255)),
+      'token'              => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'search_token'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'created_at'         => new sfValidatorDateTime(),
       'updated_at'         => new sfValidatorDateTime(),
       'compartidos_list'   => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Usuario', 'required' => false)),
@@ -77,6 +79,7 @@ abstract class BaseUsuarioForm extends BaseFormDoctrine
         new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('id'))),
         new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('identificacion'))),
         new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('token'))),
+        new sfValidatorDoctrineUnique(array('model' => 'Usuario', 'column' => array('search_token'))),
       ))
     );
 

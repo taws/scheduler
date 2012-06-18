@@ -90,10 +90,9 @@
             <div id="content">
                 <?php if($sf_user->isAuthenticated()): ?>
                 
-                <ul class="tabs">
-                    
+                <ul class="tabs" id="tabs-top">  
                     <?php if (!include_slot('sharethis')): ?><?php endif ?>
-                    <ul id="message-error" style="text-align:center; width: auto; color: red; font-size: 15px; padding-left: 75px;"></ul>
+                    <ul id="message-error" style="text-align:center; width: 743px; color: red; font-size: 15px; padding-left: 75px; padding-bottom: 5px;"></ul>
                     <?php if (!include_slot('loader-bar')): ?><?php endif ?>
                 </ul>
                 <?php if (!include_slot('sharing-to')): ?><?php endif ?>
@@ -110,11 +109,11 @@
       
       <div id="bottom">
             <div class="wrapper">
-                <div id="bottom-text">2011 <a href="http://taws.espol.edu.ec/"> TAWS</a> </div>
+                <div id="bottom-text">2012 <a href="http://taws.espol.edu.ec/" target="_blank"> TAWS</a> </div>
                 <ul class="social ">
-                    <li><a href="https://www.facebook.com/tawsespol" class="poshytip  facebook" title="En Facebook"></a></li>
-                    <li><a href="http://twitter.com/#!/taws_espol" class="poshytip twitter" title="Follow us"></a></li>
-                    <li><a href="http://taws.espol.edu.ec/" class="poshytip dribbble" title="Home"></a></li>
+                    <li><a href="https://www.facebook.com/tawsespol" target="_blank" class="poshytip  facebook" title="En Facebook"></a></li>
+                    <li><a href="http://twitter.com/#!/taws_espol" target="_blank" class="poshytip twitter" title="Follow us"></a></li>
+                    <li><a href="http://taws.espol.edu.ec/" target="_blank" class="poshytip dribbble" title="Home"></a></li>
                 </ul>
                 <a href="javascript:scroll(0,0)"><div id="to-top" class="poshytip" title="To top"></div></a>
             </div>
