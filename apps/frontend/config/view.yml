@@ -14,7 +14,7 @@ default:
     author:        TAWS, Denisse Cayetano, Marco Calder&oacute;n, Allan Avenda&ntilde;o, Alejandro Vinueza
     #robots:       index, follow
 
-  stylesheets:    [style.css,buttons.css,social-icons.css,tabs.css,scheduler/scheduler.css,scheduler/widget.css,version3.css]
+  stylesheets:    [style.css,buttons.css,social-icons.css,tabs.css,scheduler/scheduler.css,scheduler/widget.css,version3.css,tooltip.css]
 
   javascripts:    [base/prototype.js,widget.js,functions.js,application.js,busy/cvi_busy_lib.js]
 

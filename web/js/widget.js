@@ -14,8 +14,7 @@ var GO = {
   scripts: [
     {src: '/js/operations.js'},
     {src: '/js/subject.js'},
-    {src: '/js/schedule.js'},
-    {src: '/js/taws.js'}
+    {src: '/js/schedule.js'}
   ],
   options: {
       id: 'grid-div',
@@ -102,6 +101,40 @@ var Grid = Class.create({
     }
   
     this.construct(this.options);
+  },
+  senseHour: function(y) {
+      
+      new PeriodicalExecuter(function(pe) {
+        var day = new Date();
+        var nowHour = day.getHours();   
+        
+        $$('.hours').each(function(y){
+            var hour = y.readAttribute('label');
+            
+            if(hour != nowHour)  y.removeClassName('nowHour');
+            else                 y.addClassName('nowHour');
+            
+        },{hour: nowHour});
+        
+        if(y.init) {
+            pe.stop();
+        } 
+        
+    }, y.period);
+    
+  },
+  timeFormatHour: function(y) {
+    var time = parseInt(y,10);
+    if(time < 12) 
+        return y+" AM";
+    else if (time > 12)
+        return (time - 12)+" PM";
+    return y+" PM"
+  }, 
+  formatHour: function(y) {
+      var iniHour = y.split(" - ")[0];
+      iniHour = iniHour.split(":")[0];
+      return iniHour;
   },
   getHour: function(y){
   
@@ -198,14 +231,31 @@ var Grid = Class.create({
     //TD DAYS
     GO.days.each(function(obj){
       if(obj.id <= this.endDay) {
-        
+          
         var tdDay = new Element('td');
         tdDay.addClassName('title');
+        
         var labelDay = new Element('label');
         
-        labelDay.update(obj.day.capitalize());
+        labelDay.update(" "+obj.day.capitalize());
         
+        var today = new Date();
+        var dd = today.getDate();
+        var nd = today.getDay();
+        
+        var nRealDay = dd+(obj.id-nd);
+        var labelNDay = new Element('label');
+        
+        labelNDay.update(nRealDay);
+        labelNDay.addClassName('number-day');
+        
+        
+        tdDay.insert(labelNDay);
         tdDay.insert(labelDay);
+        
+        if(obj.id == nd)
+            tdDay.addClassName('today');
+        
         trHead.insert(tdDay);
       }
     },{endDay: this.options.endDay});
@@ -222,16 +272,26 @@ var Grid = Class.create({
     $R(1,rows).each(function(y){
       var trBody = new Element('tr');
       
-      if(y%2 == 0)
-        trBody.addClassName('odd');
+      trBody.addClassName((y%2 == 0)?'odd':'even');
       
       var hour = this.getHour(y);
+      
+      
             
       var tdHour = new Element('td',{index:y, hour: hour});
       tdHour.addClassName('hours');
       var labelHour = new Element('label');
-      labelHour.update(hour);
+      var textLabelHour = this.formatHour(hour);
+      labelHour.update( this.timeFormatHour(textLabelHour) );
       tdHour.insert(labelHour);
+      
+      
+      if(y%2 != 0) {
+          tdHour.writeAttribute('rowspan',2);
+          tdHour.writeAttribute('label',parseInt(textLabelHour,10));
+      }
+      else         tdHour.addClassName('hide');
+      
       trBody.insert(tdHour);
       
       GO.days.each(function(obj){
@@ -241,12 +301,17 @@ var Grid = Class.create({
           tdCell.addClassName('unselected');
 		  tdCell.setStyle({overflow:'hidden'});
           tdCell.observe('click',function(event){
-            event.element().fire("widget:click", { column: obj.column, row: y});
+            event.element().fire("widget:click", {column: obj.column, row: y});
           });
           
           tdCell.observe('dblclick',function(event){
-            event.element().fire("widget:dblclick", { column: obj.column, row: y});
+            event.element().fire("widget:dblclick", {column: obj.column, row: y});
           });
+      
+          var today = new Date();
+          var nd = today.getDay();
+          if(obj.id == nd)
+            tdCell.addClassName('today');
           
           trBody.insert(tdCell);
         }
@@ -254,8 +319,13 @@ var Grid = Class.create({
       
       tbody.insert(trBody);
     
-    },{days: GO.days, endDay: this.options.endDay, getHour: this.getHour});
+    },{days: GO.days, endDay: this.options.endDay, 
+        getHour: this.getHour, formatHour: this.formatHour, timeFormatHour: this.timeFormatHour});
 
+    
+    this.senseHour({period:1, init: true});
+    this.senseHour({period:10, init: false});
+    
     
   }  
 });
@@ -336,4 +406,35 @@ document.observe("widget:release-text",function(event){
 	
 	//Release content for assistant-classes
 	Grid.releaseContentCell(event.memo.id);
+});
+
+document.observe("widget:lesson-over", function(event) {
+    
+    var lesson = $(event.memo.id).readAttribute('class');
+    
+    $$('.'+lesson).each(function(y){
+         $(y.id).toggleClassName('highlighted');
+         
+//         new Effect.Highlight($(y.id), {
+//            startcolor: '#ff9900',
+//            duration: 2,
+//            afterFinish: function() { 
+//                    $(y.id).setStyle({ backgroundColor: null, backgroundImage: null }) 
+//                }
+//         });
+         
+    });
+    
+});
+
+document.observe("widget:lesson-out", function(event) {
+    
+    $(event.memo.id).toggleClassName('highlighted');
+    
+    var lesson = $(event.memo.id).readAttribute('class');
+    
+    $$('.'+lesson).each(function(y){
+        if($(y.id).hasClassName('highlighted'))
+         $(y.id).toggleClassName('highlighted');
+    });
 });

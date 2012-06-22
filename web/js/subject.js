@@ -1,3 +1,78 @@
+var tooltip=function(){
+	var id = 'tt';
+	var top = 3;
+	var left = 3;
+	var maxw = 300;
+	var speed = 10;
+	var timer = 20;
+	var endalpha = 95;
+	var alpha = 0;
+	var tt,t,c,b,h;
+	var ie = document.all ? true : false;
+	return{
+		show:function(v,w){
+			if(tt == null){
+				tt = document.createElement('div');
+				tt.setAttribute('id',id);
+				t = document.createElement('div');
+				t.setAttribute('id',id + 'top');
+				c = document.createElement('div');
+				c.setAttribute('id',id + 'cont');
+				b = document.createElement('div');
+				b.setAttribute('id',id + 'bot');
+				tt.appendChild(t);
+				tt.appendChild(c);
+				tt.appendChild(b);
+				document.body.appendChild(tt);
+				tt.style.opacity = 0;
+				tt.style.filter = 'alpha(opacity=0)';
+				document.onmousemove = this.pos;
+			}
+			tt.style.display = 'block';
+			c.innerHTML = v;
+			tt.style.width = w ? w + 'px' : 'auto';
+			if(!w && ie){
+				t.style.display = 'none';
+				b.style.display = 'none';
+				tt.style.width = tt.offsetWidth;
+				t.style.display = 'block';
+				b.style.display = 'block';
+			}
+			if(tt.offsetWidth > maxw){tt.style.width = maxw + 'px'}
+			h = parseInt(tt.offsetHeight) + top;
+			clearInterval(tt.timer);
+			tt.timer = setInterval(function(){tooltip.fade(1)},timer);
+		},
+		pos:function(e){
+			var u = ie ? event.clientY + document.documentElement.scrollTop : e.pageY;
+			var l = ie ? event.clientX + document.documentElement.scrollLeft : e.pageX;
+			tt.style.top = (u - h - 10) + 'px';
+			tt.style.left = (l + left + 10) + 'px';
+		},
+		fade:function(d){
+			var a = alpha;
+			if((a != endalpha && d == 1) || (a != 0 && d == -1)){
+				var i = speed;
+				if(endalpha - a < speed && d == 1){
+					i = endalpha - a;
+				}else if(alpha < speed && d == -1){
+					i = a;
+				}
+				alpha = a + (i * d);
+				tt.style.opacity = alpha * .01;
+				tt.style.filter = 'alpha(opacity=' + alpha + ')';
+			}else{
+				clearInterval(tt.timer);
+				if(d == -1){tt.style.display = 'none'}
+			}
+		},
+		hide:function(){
+			clearInterval(tt.timer);
+			tt.timer = setInterval(function(){tooltip.fade(-1)},timer);
+		}
+	};
+}();
+
 var Subject = new Class.create({
   initialize: function(attr){
     this.attr = {
@@ -58,22 +133,26 @@ Object.extend(Subject,{
 
           if(Grid.addContentCell(objIni.result,objEnd.result,content)) {
             Scheduler.addToSchedule(horario.codigoparalelo,objIni.result);
+           
 
             $(objIni.result).observe('mouseover',function(){
 
               var balloon;
               balloon = "<label style=\"font-weight: bolder; font-style:italic; text-decoration: underline;\">"+subject.attr.name;
-              balloon += "<\/label> Par.: "+subject.attr.parallel+"<br>";
+              balloon += "<\/label> Paralelo: "+subject.attr.parallel+"<br>";
               balloon += "<label style=\"font-weight:bold;\">Profesor: <\/label>";
               balloon += "<label style=\"text-align:right; font-style:italic;\">"+subject.attr.professor+"<\/label><br>";
               balloon += "<label style=\"font-weight:bold;\">Aula:     <\/label>"+subject.attr.room;
               balloon += " ("+subject.attr.ubication+")<br>";
-              Tip(balloon, BALLOON, true, ABOVE, true, OFFSETX, -17, PADDING, 8);
+//              Tip(balloon, BALLOON, true, ABOVE, true, OFFSETX, -17, PADDING, 8);
+                tooltip.show(balloon);
             });
 
             $(objIni.result).observe('mouseout',function(){
-                UnTip();
+//                UnTip();
+                tooltip.hide();
             });
+            
           }
         }
     })

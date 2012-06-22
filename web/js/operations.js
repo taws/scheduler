@@ -38,13 +38,23 @@ Object.extend(Grid,{
 		  
 		  $R(iniROW+1,finROW).each(function(ROW){
 			$(this.COLUMN+ROW).removeClassName('unselected');
+                        $(this.COLUMN+ROW).removeClassName('today');
 			$(this.COLUMN+ROW).addClassName('hide');
 		  },{COLUMN: iniCOL});
 		  
                   ini.writeAttribute('rowspan',finROW - iniROW + 1);
 		  ini.removeClassName('unselected');
+                  ini.removeClassName('today');
 		  ini.addClassName('selected');
-		  
+                  
+                  ini.observe('mouseover', function(event){
+                      event.element().fire("widget:lesson-over",{ id: ini.getAttribute('id')});
+                  });
+                  ini.observe('mouseout', function(event){
+                      event.element().fire("widget:lesson-out",{ id: ini.getAttribute('id')});
+                  });
+                  
+                  
 		  //Edit in-place
 		  var labelText = new Element('label',{id: ini.getAttribute('id')+'l',class: 'click-to-edit'});
 		  var inputText = new Element('input',{id: ini.getAttribute('id')+'i', type:'text',size:"7",maxlength:"20", height: '50'});

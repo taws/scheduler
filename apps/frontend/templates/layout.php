@@ -76,15 +76,6 @@
               </ul>
           </div>
       </div>
-      <div id="header">
-            <div class="wrapper">
-                <a href="<?php echo url_for('homepage') ?>">
-                    <img id="logo" src="/img/banner3.png" alt="Scheduler" />
-                </a>
-                
-                
-            </div>
-        </div>
       <div id="main">   
         <div class="wrapper">    
             <div id="content">
